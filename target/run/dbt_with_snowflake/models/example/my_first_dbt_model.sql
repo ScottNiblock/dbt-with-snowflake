@@ -1,6 +1,6 @@
 
 
-      create or replace transient table DEMO_DB.PUBLIC.my_first_dbt_model  as
+      create or replace transient table DEMO_DB.staging.my_first_dbt_model  as
       (/*
     Welcome to your first dbt model!
     Did you know that you can also configure models directly within SQL files?

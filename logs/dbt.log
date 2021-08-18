@@ -523,3 +523,2434 @@ where id = 1
 Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
 2021-08-18 19:14:59.276573 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ec12e20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ec12be0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ec12dc0>]}
 2021-08-18 19:14:59.276891 (MainThread): Flushing usage events
+2021-08-18 19:45:45.941808 (MainThread): Running with dbt=0.19.1
+2021-08-18 19:45:47.230572 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.test.TestTask'>, data=False, debug=False, defer=None, exclude=None, fail_fast=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/scottniblock/.dbt', project_dir=None, record_timing_info=None, rpc_method='test', schema=False, selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, vars='{}', version_check=True, warn_error=False, which='test', write_json=True)
+2021-08-18 19:45:47.236161 (MainThread): Tracking: tracking
+2021-08-18 19:45:47.236512 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11293e2b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11386a8b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11386a940>]}
+2021-08-18 19:45:47.249595 (MainThread): Partial parsing not enabled
+2021-08-18 19:45:47.250860 (MainThread): Parsing macros/catalog.sql
+2021-08-18 19:45:47.253658 (MainThread): Parsing macros/adapters.sql
+2021-08-18 19:45:47.286980 (MainThread): Parsing macros/materializations/merge.sql
+2021-08-18 19:45:47.289525 (MainThread): Parsing macros/materializations/view.sql
+2021-08-18 19:45:47.291669 (MainThread): Parsing macros/materializations/table.sql
+2021-08-18 19:45:47.297275 (MainThread): Parsing macros/materializations/incremental.sql
+2021-08-18 19:45:47.315110 (MainThread): Parsing macros/core.sql
+2021-08-18 19:45:47.320957 (MainThread): Parsing macros/materializations/helpers.sql
+2021-08-18 19:45:47.336109 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-08-18 19:45:47.339172 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-08-18 19:45:47.362403 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-08-18 19:45:47.437517 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-08-18 19:45:47.462175 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-08-18 19:45:47.464486 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-08-18 19:45:47.471460 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-08-18 19:45:47.487383 (MainThread): Parsing macros/materializations/table/table.sql
+2021-08-18 19:45:47.495282 (MainThread): Parsing macros/materializations/view/view.sql
+2021-08-18 19:45:47.502609 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-08-18 19:45:47.508179 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-08-18 19:45:47.509383 (MainThread): Parsing macros/etc/query.sql
+2021-08-18 19:45:47.510754 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-08-18 19:45:47.512609 (MainThread): Parsing macros/etc/datetime.sql
+2021-08-18 19:45:47.522480 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-08-18 19:45:47.524835 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-08-18 19:45:47.527057 (MainThread): Parsing macros/adapters/common.sql
+2021-08-18 19:45:47.575310 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-08-18 19:45:47.578185 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-08-18 19:45:47.582661 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-08-18 19:45:47.587110 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-08-18 19:45:47.600833 (MainThread): Partial parsing not enabled
+2021-08-18 19:45:47.628839 (MainThread): Acquiring new snowflake connection "model.dbt_with_snowflake.my_first_dbt_model".
+2021-08-18 19:45:47.640060 (MainThread): Acquiring new snowflake connection "model.dbt_with_snowflake.my_second_dbt_model".
+2021-08-18 19:45:47.674642 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1138312e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1139bee80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1139bef10>]}
+2021-08-18 19:45:47.674877 (MainThread): Flushing usage events
+2021-08-18 19:45:48.208384 (MainThread): Connection 'model.dbt_with_snowflake.my_second_dbt_model' was properly closed.
+2021-08-18 19:45:48.208722 (MainThread): Encountered an error:
+2021-08-18 19:45:48.208980 (MainThread): Compilation Error
+  The schema file at snowflake_sample_data/schema.yml is invalid because no version is specified. Please consult the documentation for more information on schema.yml syntax:
+  
+  https://docs.getdbt.com/docs/schemayml-files
+2021-08-18 19:45:48.214404 (MainThread): Traceback (most recent call last):
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/main.py", line 125, in main
+    results, succeeded = handle_and_check(args)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/main.py", line 203, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/main.py", line 256, in run_from_args
+    results = task.run()
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 406, in run
+    self._runtime_initialize()
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 122, in _runtime_initialize
+    super()._runtime_initialize()
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 79, in _runtime_initialize
+    self.load_manifest()
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 66, in load_manifest
+    self.manifest = get_full_manifest(self.config)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/perf_utils.py", line 28, in get_full_manifest
+    return load_manifest(
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 862, in load_manifest
+    return ManifestLoader.load_all(config, macro_manifest, macro_hook)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 442, in load_all
+    loader.load(macro_manifest=macro_manifest)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 290, in load
+    self.parse_project(project, macro_manifest, old_results)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 237, in parse_project
+    self.parse_with_cache(path, parser, old_results)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 188, in parse_with_cache
+    parser.parse_file(block)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/parser/schemas.py", line 643, in parse_file
+    self._check_format_version(yaml_block)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/parser/schemas.py", line 226, in _check_format_version
+    raise_invalid_schema_yml_version(path, 'no version is specified')
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/exceptions.py", line 895, in raise_invalid_schema_yml_version
+    raise_compiler_error(
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/exceptions.py", line 435, in raise_compiler_error
+    raise CompilationException(msg, node)
+dbt.exceptions.CompilationException: Compilation Error
+  The schema file at snowflake_sample_data/schema.yml is invalid because no version is specified. Please consult the documentation for more information on schema.yml syntax:
+  
+  https://docs.getdbt.com/docs/schemayml-files
+
+2021-08-18 19:46:05.959590 (MainThread): Running with dbt=0.19.1
+2021-08-18 19:46:06.585508 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.test.TestTask'>, data=False, debug=False, defer=None, exclude=None, fail_fast=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/scottniblock/.dbt', project_dir=None, record_timing_info=None, rpc_method='test', schema=False, selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, vars='{}', version_check=True, warn_error=False, which='test', write_json=True)
+2021-08-18 19:46:06.586423 (MainThread): Tracking: tracking
+2021-08-18 19:46:06.586741 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1037042b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104682b50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104682be0>]}
+2021-08-18 19:46:06.599021 (MainThread): Partial parsing not enabled
+2021-08-18 19:46:06.600082 (MainThread): Parsing macros/catalog.sql
+2021-08-18 19:46:06.602575 (MainThread): Parsing macros/adapters.sql
+2021-08-18 19:46:06.634160 (MainThread): Parsing macros/materializations/merge.sql
+2021-08-18 19:46:06.636447 (MainThread): Parsing macros/materializations/view.sql
+2021-08-18 19:46:06.638374 (MainThread): Parsing macros/materializations/table.sql
+2021-08-18 19:46:06.642948 (MainThread): Parsing macros/materializations/incremental.sql
+2021-08-18 19:46:06.654054 (MainThread): Parsing macros/core.sql
+2021-08-18 19:46:06.658489 (MainThread): Parsing macros/materializations/helpers.sql
+2021-08-18 19:46:06.668085 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-08-18 19:46:06.669951 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-08-18 19:46:06.689870 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-08-18 19:46:06.765103 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-08-18 19:46:06.788689 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-08-18 19:46:06.790683 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-08-18 19:46:06.797230 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-08-18 19:46:06.812600 (MainThread): Parsing macros/materializations/table/table.sql
+2021-08-18 19:46:06.820325 (MainThread): Parsing macros/materializations/view/view.sql
+2021-08-18 19:46:06.827026 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-08-18 19:46:06.832362 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-08-18 19:46:06.833369 (MainThread): Parsing macros/etc/query.sql
+2021-08-18 19:46:06.834491 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-08-18 19:46:06.836249 (MainThread): Parsing macros/etc/datetime.sql
+2021-08-18 19:46:06.845947 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-08-18 19:46:06.848069 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-08-18 19:46:06.849896 (MainThread): Parsing macros/adapters/common.sql
+2021-08-18 19:46:06.896709 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-08-18 19:46:06.898834 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-08-18 19:46:06.900528 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-08-18 19:46:06.902516 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-08-18 19:46:06.910487 (MainThread): Partial parsing not enabled
+2021-08-18 19:46:06.934369 (MainThread): Acquiring new snowflake connection "model.dbt_with_snowflake.my_first_dbt_model".
+2021-08-18 19:46:06.944721 (MainThread): Acquiring new snowflake connection "model.dbt_with_snowflake.my_second_dbt_model".
+2021-08-18 19:46:06.974705 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104625ca0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1047730d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104782eb0>]}
+2021-08-18 19:46:06.974948 (MainThread): Flushing usage events
+2021-08-18 19:46:08.414533 (MainThread): Connection 'model.dbt_with_snowflake.my_second_dbt_model' was properly closed.
+2021-08-18 19:46:08.414873 (MainThread): Encountered an error:
+2021-08-18 19:46:08.415132 (MainThread): Compilation Error
+  Error reading dbt_with_snowflake: snowflake_sample_data/schema.yml - Runtime Error
+    Syntax error near line 3
+    ------------------------------
+    1  | version: 2
+    2  | 
+    3  |   sources:
+    4  |   - name: snowflake_sample_data
+    5  |     description: 'A sample database provided by snowflake'
+    6  |     database: snowflake_sample_data
+    
+    Raw Error:
+    ------------------------------
+    mapping values are not allowed here
+      in "<unicode string>", line 3, column 10:
+          sources:
+                 ^
+2021-08-18 19:46:08.420263 (MainThread): Traceback (most recent call last):
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/clients/yaml_helper.py", line 65, in load_yaml_text
+    return safe_load(contents)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/clients/yaml_helper.py", line 60, in safe_load
+    return yaml.load(contents, Loader=SafeLoader)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/yaml/__init__.py", line 114, in load
+    return loader.get_single_data()
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/yaml/constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/yaml/composer.py", line 36, in get_single_node
+    document = self.compose_document()
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/yaml/composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/yaml/composer.py", line 127, in compose_mapping_node
+    while not self.check_event(MappingEndEvent):
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/yaml/parser.py", line 98, in check_event
+    self.current_event = self.state()
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/yaml/parser.py", line 428, in parse_block_mapping_key
+    if self.check_token(KeyToken):
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/yaml/scanner.py", line 116, in check_token
+    self.fetch_more_tokens()
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/yaml/scanner.py", line 223, in fetch_more_tokens
+    return self.fetch_value()
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/yaml/scanner.py", line 577, in fetch_value
+    raise ScannerError(None, None,
+yaml.scanner.ScannerError: mapping values are not allowed here
+  in "<unicode string>", line 3, column 10:
+      sources:
+             ^
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/parser/schemas.py", line 247, in _yaml_from_file
+    return load_yaml_text(source_file.contents)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/clients/yaml_helper.py", line 72, in load_yaml_text
+    raise dbt.exceptions.ValidationException(error)
+dbt.exceptions.ValidationException: Runtime Error
+  Syntax error near line 3
+  ------------------------------
+  1  | version: 2
+  2  | 
+  3  |   sources:
+  4  |   - name: snowflake_sample_data
+  5  |     description: 'A sample database provided by snowflake'
+  6  |     database: snowflake_sample_data
+  
+  Raw Error:
+  ------------------------------
+  mapping values are not allowed here
+    in "<unicode string>", line 3, column 10:
+        sources:
+               ^
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/main.py", line 125, in main
+    results, succeeded = handle_and_check(args)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/main.py", line 203, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/main.py", line 256, in run_from_args
+    results = task.run()
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 406, in run
+    self._runtime_initialize()
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 122, in _runtime_initialize
+    super()._runtime_initialize()
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 79, in _runtime_initialize
+    self.load_manifest()
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 66, in load_manifest
+    self.manifest = get_full_manifest(self.config)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/perf_utils.py", line 28, in get_full_manifest
+    return load_manifest(
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 862, in load_manifest
+    return ManifestLoader.load_all(config, macro_manifest, macro_hook)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 442, in load_all
+    loader.load(macro_manifest=macro_manifest)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 290, in load
+    self.parse_project(project, macro_manifest, old_results)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 237, in parse_project
+    self.parse_with_cache(path, parser, old_results)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 188, in parse_with_cache
+    parser.parse_file(block)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/parser/schemas.py", line 624, in parse_file
+    dct = self._yaml_from_file(block.file)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/parser/schemas.py", line 250, in _yaml_from_file
+    raise CompilationException(
+dbt.exceptions.CompilationException: Compilation Error
+  Error reading dbt_with_snowflake: snowflake_sample_data/schema.yml - Runtime Error
+    Syntax error near line 3
+    ------------------------------
+    1  | version: 2
+    2  | 
+    3  |   sources:
+    4  |   - name: snowflake_sample_data
+    5  |     description: 'A sample database provided by snowflake'
+    6  |     database: snowflake_sample_data
+    
+    Raw Error:
+    ------------------------------
+    mapping values are not allowed here
+      in "<unicode string>", line 3, column 10:
+          sources:
+                 ^
+
+2021-08-18 19:46:24.960830 (MainThread): Running with dbt=0.19.1
+2021-08-18 19:46:25.592123 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.test.TestTask'>, data=False, debug=False, defer=None, exclude=None, fail_fast=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/scottniblock/.dbt', project_dir=None, record_timing_info=None, rpc_method='test', schema=False, selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, vars='{}', version_check=True, warn_error=False, which='test', write_json=True)
+2021-08-18 19:46:25.594602 (MainThread): Tracking: tracking
+2021-08-18 19:46:25.595512 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10dec52e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ee02c70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ee02d00>]}
+2021-08-18 19:46:25.609396 (MainThread): Partial parsing not enabled
+2021-08-18 19:46:25.610822 (MainThread): Parsing macros/catalog.sql
+2021-08-18 19:46:25.613449 (MainThread): Parsing macros/adapters.sql
+2021-08-18 19:46:25.645442 (MainThread): Parsing macros/materializations/merge.sql
+2021-08-18 19:46:25.648085 (MainThread): Parsing macros/materializations/view.sql
+2021-08-18 19:46:25.649905 (MainThread): Parsing macros/materializations/table.sql
+2021-08-18 19:46:25.654518 (MainThread): Parsing macros/materializations/incremental.sql
+2021-08-18 19:46:25.666170 (MainThread): Parsing macros/core.sql
+2021-08-18 19:46:25.671435 (MainThread): Parsing macros/materializations/helpers.sql
+2021-08-18 19:46:25.681990 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-08-18 19:46:25.684244 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-08-18 19:46:25.704887 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-08-18 19:46:25.779245 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-08-18 19:46:25.803060 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-08-18 19:46:25.805235 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-08-18 19:46:25.811861 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-08-18 19:46:25.826628 (MainThread): Parsing macros/materializations/table/table.sql
+2021-08-18 19:46:25.834286 (MainThread): Parsing macros/materializations/view/view.sql
+2021-08-18 19:46:25.843675 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-08-18 19:46:25.850235 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-08-18 19:46:25.851580 (MainThread): Parsing macros/etc/query.sql
+2021-08-18 19:46:25.853132 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-08-18 19:46:25.855315 (MainThread): Parsing macros/etc/datetime.sql
+2021-08-18 19:46:25.865921 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-08-18 19:46:25.868413 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-08-18 19:46:25.870583 (MainThread): Parsing macros/adapters/common.sql
+2021-08-18 19:46:25.916725 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-08-18 19:46:25.919187 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-08-18 19:46:25.923240 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-08-18 19:46:25.927568 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-08-18 19:46:25.940474 (MainThread): Partial parsing not enabled
+2021-08-18 19:46:25.968790 (MainThread): Acquiring new snowflake connection "model.dbt_with_snowflake.my_first_dbt_model".
+2021-08-18 19:46:25.979474 (MainThread): Acquiring new snowflake connection "model.dbt_with_snowflake.my_second_dbt_model".
+2021-08-18 19:46:26.009174 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ee51bb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ef340d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ef43d90>]}
+2021-08-18 19:46:26.009412 (MainThread): Flushing usage events
+2021-08-18 19:46:26.451094 (MainThread): Connection 'model.dbt_with_snowflake.my_second_dbt_model' was properly closed.
+2021-08-18 19:46:26.451424 (MainThread): Encountered an error:
+2021-08-18 19:46:26.451684 (MainThread): Compilation Error
+  Error reading dbt_with_snowflake: snowflake_sample_data/schema.yml - Runtime Error
+    Syntax error near line 3
+    ------------------------------
+    1  | version: 2
+    2  | 
+    3  |   sources:
+    4  |   - name: snowflake_sample_data
+    5  |      description: 'A sample database provided by snowflake'
+    6  |      database: snowflake_sample_data
+    
+    Raw Error:
+    ------------------------------
+    mapping values are not allowed here
+      in "<unicode string>", line 3, column 10:
+          sources:
+                 ^
+2021-08-18 19:46:26.456760 (MainThread): Traceback (most recent call last):
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/clients/yaml_helper.py", line 65, in load_yaml_text
+    return safe_load(contents)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/clients/yaml_helper.py", line 60, in safe_load
+    return yaml.load(contents, Loader=SafeLoader)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/yaml/__init__.py", line 114, in load
+    return loader.get_single_data()
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/yaml/constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/yaml/composer.py", line 36, in get_single_node
+    document = self.compose_document()
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/yaml/composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/yaml/composer.py", line 127, in compose_mapping_node
+    while not self.check_event(MappingEndEvent):
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/yaml/parser.py", line 98, in check_event
+    self.current_event = self.state()
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/yaml/parser.py", line 428, in parse_block_mapping_key
+    if self.check_token(KeyToken):
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/yaml/scanner.py", line 116, in check_token
+    self.fetch_more_tokens()
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/yaml/scanner.py", line 223, in fetch_more_tokens
+    return self.fetch_value()
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/yaml/scanner.py", line 577, in fetch_value
+    raise ScannerError(None, None,
+yaml.scanner.ScannerError: mapping values are not allowed here
+  in "<unicode string>", line 3, column 10:
+      sources:
+             ^
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/parser/schemas.py", line 247, in _yaml_from_file
+    return load_yaml_text(source_file.contents)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/clients/yaml_helper.py", line 72, in load_yaml_text
+    raise dbt.exceptions.ValidationException(error)
+dbt.exceptions.ValidationException: Runtime Error
+  Syntax error near line 3
+  ------------------------------
+  1  | version: 2
+  2  | 
+  3  |   sources:
+  4  |   - name: snowflake_sample_data
+  5  |      description: 'A sample database provided by snowflake'
+  6  |      database: snowflake_sample_data
+  
+  Raw Error:
+  ------------------------------
+  mapping values are not allowed here
+    in "<unicode string>", line 3, column 10:
+        sources:
+               ^
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/main.py", line 125, in main
+    results, succeeded = handle_and_check(args)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/main.py", line 203, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/main.py", line 256, in run_from_args
+    results = task.run()
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 406, in run
+    self._runtime_initialize()
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 122, in _runtime_initialize
+    super()._runtime_initialize()
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 79, in _runtime_initialize
+    self.load_manifest()
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 66, in load_manifest
+    self.manifest = get_full_manifest(self.config)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/perf_utils.py", line 28, in get_full_manifest
+    return load_manifest(
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 862, in load_manifest
+    return ManifestLoader.load_all(config, macro_manifest, macro_hook)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 442, in load_all
+    loader.load(macro_manifest=macro_manifest)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 290, in load
+    self.parse_project(project, macro_manifest, old_results)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 237, in parse_project
+    self.parse_with_cache(path, parser, old_results)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 188, in parse_with_cache
+    parser.parse_file(block)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/parser/schemas.py", line 624, in parse_file
+    dct = self._yaml_from_file(block.file)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/parser/schemas.py", line 250, in _yaml_from_file
+    raise CompilationException(
+dbt.exceptions.CompilationException: Compilation Error
+  Error reading dbt_with_snowflake: snowflake_sample_data/schema.yml - Runtime Error
+    Syntax error near line 3
+    ------------------------------
+    1  | version: 2
+    2  | 
+    3  |   sources:
+    4  |   - name: snowflake_sample_data
+    5  |      description: 'A sample database provided by snowflake'
+    6  |      database: snowflake_sample_data
+    
+    Raw Error:
+    ------------------------------
+    mapping values are not allowed here
+      in "<unicode string>", line 3, column 10:
+          sources:
+                 ^
+
+2021-08-18 19:47:12.275300 (MainThread): Running with dbt=0.19.1
+2021-08-18 19:47:13.048938 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.test.TestTask'>, data=False, debug=False, defer=None, exclude=None, fail_fast=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/scottniblock/.dbt', project_dir=None, record_timing_info=None, rpc_method='test', schema=False, selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, vars='{}', version_check=True, warn_error=False, which='test', write_json=True)
+2021-08-18 19:47:13.050437 (MainThread): Tracking: tracking
+2021-08-18 19:47:13.050837 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1077f1d30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1068b44c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1077ec070>]}
+2021-08-18 19:47:13.064378 (MainThread): Partial parsing not enabled
+2021-08-18 19:47:13.065962 (MainThread): Parsing macros/catalog.sql
+2021-08-18 19:47:13.069243 (MainThread): Parsing macros/adapters.sql
+2021-08-18 19:47:13.101324 (MainThread): Parsing macros/materializations/merge.sql
+2021-08-18 19:47:13.104070 (MainThread): Parsing macros/materializations/view.sql
+2021-08-18 19:47:13.106048 (MainThread): Parsing macros/materializations/table.sql
+2021-08-18 19:47:13.111653 (MainThread): Parsing macros/materializations/incremental.sql
+2021-08-18 19:47:13.123758 (MainThread): Parsing macros/core.sql
+2021-08-18 19:47:13.133205 (MainThread): Parsing macros/materializations/helpers.sql
+2021-08-18 19:47:13.148961 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-08-18 19:47:13.152015 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-08-18 19:47:13.174671 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-08-18 19:47:13.248642 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-08-18 19:47:13.273204 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-08-18 19:47:13.275430 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-08-18 19:47:13.282104 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-08-18 19:47:13.297358 (MainThread): Parsing macros/materializations/table/table.sql
+2021-08-18 19:47:13.304912 (MainThread): Parsing macros/materializations/view/view.sql
+2021-08-18 19:47:13.311766 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-08-18 19:47:13.317248 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-08-18 19:47:13.318493 (MainThread): Parsing macros/etc/query.sql
+2021-08-18 19:47:13.319997 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-08-18 19:47:13.321905 (MainThread): Parsing macros/etc/datetime.sql
+2021-08-18 19:47:13.331440 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-08-18 19:47:13.333765 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-08-18 19:47:13.335837 (MainThread): Parsing macros/adapters/common.sql
+2021-08-18 19:47:13.382239 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-08-18 19:47:13.387462 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-08-18 19:47:13.391442 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-08-18 19:47:13.395896 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-08-18 19:47:13.412096 (MainThread): Partial parsing not enabled
+2021-08-18 19:47:13.441279 (MainThread): Acquiring new snowflake connection "model.dbt_with_snowflake.my_first_dbt_model".
+2021-08-18 19:47:13.451972 (MainThread): Acquiring new snowflake connection "model.dbt_with_snowflake.my_second_dbt_model".
+2021-08-18 19:47:13.481835 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1077aea30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1079240a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107932d90>]}
+2021-08-18 19:47:13.482082 (MainThread): Flushing usage events
+2021-08-18 19:47:13.983730 (MainThread): Connection 'model.dbt_with_snowflake.my_second_dbt_model' was properly closed.
+2021-08-18 19:47:13.984076 (MainThread): Encountered an error:
+2021-08-18 19:47:13.984343 (MainThread): Compilation Error
+  Error reading dbt_with_snowflake: snowflake_sample_data/schema.yml - Runtime Error
+    Syntax error near line 3
+    ------------------------------
+    1  | version: 2
+    2  | 
+    3  |   sources:
+    4  |   - name: snowflake_sample_data
+    5  |      description: "A sample database provided by snowflake"
+    6  |      database: snowflake_sample_data
+    
+    Raw Error:
+    ------------------------------
+    mapping values are not allowed here
+      in "<unicode string>", line 3, column 10:
+          sources:
+                 ^
+2021-08-18 19:47:13.989357 (MainThread): Traceback (most recent call last):
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/clients/yaml_helper.py", line 65, in load_yaml_text
+    return safe_load(contents)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/clients/yaml_helper.py", line 60, in safe_load
+    return yaml.load(contents, Loader=SafeLoader)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/yaml/__init__.py", line 114, in load
+    return loader.get_single_data()
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/yaml/constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/yaml/composer.py", line 36, in get_single_node
+    document = self.compose_document()
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/yaml/composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/yaml/composer.py", line 127, in compose_mapping_node
+    while not self.check_event(MappingEndEvent):
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/yaml/parser.py", line 98, in check_event
+    self.current_event = self.state()
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/yaml/parser.py", line 428, in parse_block_mapping_key
+    if self.check_token(KeyToken):
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/yaml/scanner.py", line 116, in check_token
+    self.fetch_more_tokens()
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/yaml/scanner.py", line 223, in fetch_more_tokens
+    return self.fetch_value()
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/yaml/scanner.py", line 577, in fetch_value
+    raise ScannerError(None, None,
+yaml.scanner.ScannerError: mapping values are not allowed here
+  in "<unicode string>", line 3, column 10:
+      sources:
+             ^
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/parser/schemas.py", line 247, in _yaml_from_file
+    return load_yaml_text(source_file.contents)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/clients/yaml_helper.py", line 72, in load_yaml_text
+    raise dbt.exceptions.ValidationException(error)
+dbt.exceptions.ValidationException: Runtime Error
+  Syntax error near line 3
+  ------------------------------
+  1  | version: 2
+  2  | 
+  3  |   sources:
+  4  |   - name: snowflake_sample_data
+  5  |      description: "A sample database provided by snowflake"
+  6  |      database: snowflake_sample_data
+  
+  Raw Error:
+  ------------------------------
+  mapping values are not allowed here
+    in "<unicode string>", line 3, column 10:
+        sources:
+               ^
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/main.py", line 125, in main
+    results, succeeded = handle_and_check(args)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/main.py", line 203, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/main.py", line 256, in run_from_args
+    results = task.run()
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 406, in run
+    self._runtime_initialize()
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 122, in _runtime_initialize
+    super()._runtime_initialize()
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 79, in _runtime_initialize
+    self.load_manifest()
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 66, in load_manifest
+    self.manifest = get_full_manifest(self.config)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/perf_utils.py", line 28, in get_full_manifest
+    return load_manifest(
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 862, in load_manifest
+    return ManifestLoader.load_all(config, macro_manifest, macro_hook)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 442, in load_all
+    loader.load(macro_manifest=macro_manifest)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 290, in load
+    self.parse_project(project, macro_manifest, old_results)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 237, in parse_project
+    self.parse_with_cache(path, parser, old_results)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 188, in parse_with_cache
+    parser.parse_file(block)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/parser/schemas.py", line 624, in parse_file
+    dct = self._yaml_from_file(block.file)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/parser/schemas.py", line 250, in _yaml_from_file
+    raise CompilationException(
+dbt.exceptions.CompilationException: Compilation Error
+  Error reading dbt_with_snowflake: snowflake_sample_data/schema.yml - Runtime Error
+    Syntax error near line 3
+    ------------------------------
+    1  | version: 2
+    2  | 
+    3  |   sources:
+    4  |   - name: snowflake_sample_data
+    5  |      description: "A sample database provided by snowflake"
+    6  |      database: snowflake_sample_data
+    
+    Raw Error:
+    ------------------------------
+    mapping values are not allowed here
+      in "<unicode string>", line 3, column 10:
+          sources:
+                 ^
+
+2021-08-18 19:50:54.328941 (MainThread): Running with dbt=0.19.1
+2021-08-18 19:50:55.730705 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.test.TestTask'>, data=False, debug=False, defer=None, exclude=None, fail_fast=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/scottniblock/.dbt', project_dir=None, record_timing_info=None, rpc_method='test', schema=False, selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, vars='{}', version_check=True, warn_error=False, which='test', write_json=True)
+2021-08-18 19:50:55.732193 (MainThread): Tracking: tracking
+2021-08-18 19:50:55.732557 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112c34100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113baf640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113baf6d0>]}
+2021-08-18 19:50:55.745489 (MainThread): Partial parsing not enabled
+2021-08-18 19:50:55.746756 (MainThread): Parsing macros/catalog.sql
+2021-08-18 19:50:55.749424 (MainThread): Parsing macros/adapters.sql
+2021-08-18 19:50:55.781378 (MainThread): Parsing macros/materializations/merge.sql
+2021-08-18 19:50:55.783963 (MainThread): Parsing macros/materializations/view.sql
+2021-08-18 19:50:55.785985 (MainThread): Parsing macros/materializations/table.sql
+2021-08-18 19:50:55.790815 (MainThread): Parsing macros/materializations/incremental.sql
+2021-08-18 19:50:55.803698 (MainThread): Parsing macros/core.sql
+2021-08-18 19:50:55.808756 (MainThread): Parsing macros/materializations/helpers.sql
+2021-08-18 19:50:55.818865 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-08-18 19:50:55.821005 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-08-18 19:50:55.841882 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-08-18 19:50:55.917239 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-08-18 19:50:55.942288 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-08-18 19:50:55.944514 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-08-18 19:50:55.952650 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-08-18 19:50:55.968991 (MainThread): Parsing macros/materializations/table/table.sql
+2021-08-18 19:50:55.977221 (MainThread): Parsing macros/materializations/view/view.sql
+2021-08-18 19:50:55.984333 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-08-18 19:50:55.989883 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-08-18 19:50:55.991092 (MainThread): Parsing macros/etc/query.sql
+2021-08-18 19:50:55.992440 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-08-18 19:50:55.994380 (MainThread): Parsing macros/etc/datetime.sql
+2021-08-18 19:50:56.005281 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-08-18 19:50:56.007787 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-08-18 19:50:56.010302 (MainThread): Parsing macros/adapters/common.sql
+2021-08-18 19:50:56.057068 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-08-18 19:50:56.059590 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-08-18 19:50:56.061474 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-08-18 19:50:56.063696 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-08-18 19:50:56.071736 (MainThread): Partial parsing not enabled
+2021-08-18 19:50:56.097263 (MainThread): Acquiring new snowflake connection "model.dbt_with_snowflake.my_first_dbt_model".
+2021-08-18 19:50:56.108009 (MainThread): Acquiring new snowflake connection "model.dbt_with_snowflake.my_second_dbt_model".
+2021-08-18 19:50:56.138264 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113b815b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113ca3b80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113cb2eb0>]}
+2021-08-18 19:50:56.138507 (MainThread): Flushing usage events
+2021-08-18 19:50:56.708328 (MainThread): Connection 'model.dbt_with_snowflake.my_second_dbt_model' was properly closed.
+2021-08-18 19:50:56.708667 (MainThread): Encountered an error:
+2021-08-18 19:50:56.708936 (MainThread): Compilation Error
+  Error reading dbt_with_snowflake: snowflake_sample_data/schema.yml - Runtime Error
+    Syntax error near line 3
+    ------------------------------
+    1  | version: 2
+    2  | 
+    3  |   sources:
+    4  |   - name: snowflake_sample_data
+    5  |     description: "A sample database provided by snowflake"
+    6  |     database: snowflake_sample_data
+    
+    Raw Error:
+    ------------------------------
+    mapping values are not allowed here
+      in "<unicode string>", line 3, column 10:
+          sources:
+                 ^
+2021-08-18 19:50:56.713883 (MainThread): Traceback (most recent call last):
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/clients/yaml_helper.py", line 65, in load_yaml_text
+    return safe_load(contents)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/clients/yaml_helper.py", line 60, in safe_load
+    return yaml.load(contents, Loader=SafeLoader)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/yaml/__init__.py", line 114, in load
+    return loader.get_single_data()
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/yaml/constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/yaml/composer.py", line 36, in get_single_node
+    document = self.compose_document()
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/yaml/composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/yaml/composer.py", line 127, in compose_mapping_node
+    while not self.check_event(MappingEndEvent):
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/yaml/parser.py", line 98, in check_event
+    self.current_event = self.state()
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/yaml/parser.py", line 428, in parse_block_mapping_key
+    if self.check_token(KeyToken):
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/yaml/scanner.py", line 116, in check_token
+    self.fetch_more_tokens()
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/yaml/scanner.py", line 223, in fetch_more_tokens
+    return self.fetch_value()
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/yaml/scanner.py", line 577, in fetch_value
+    raise ScannerError(None, None,
+yaml.scanner.ScannerError: mapping values are not allowed here
+  in "<unicode string>", line 3, column 10:
+      sources:
+             ^
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/parser/schemas.py", line 247, in _yaml_from_file
+    return load_yaml_text(source_file.contents)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/clients/yaml_helper.py", line 72, in load_yaml_text
+    raise dbt.exceptions.ValidationException(error)
+dbt.exceptions.ValidationException: Runtime Error
+  Syntax error near line 3
+  ------------------------------
+  1  | version: 2
+  2  | 
+  3  |   sources:
+  4  |   - name: snowflake_sample_data
+  5  |     description: "A sample database provided by snowflake"
+  6  |     database: snowflake_sample_data
+  
+  Raw Error:
+  ------------------------------
+  mapping values are not allowed here
+    in "<unicode string>", line 3, column 10:
+        sources:
+               ^
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/main.py", line 125, in main
+    results, succeeded = handle_and_check(args)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/main.py", line 203, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/main.py", line 256, in run_from_args
+    results = task.run()
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 406, in run
+    self._runtime_initialize()
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 122, in _runtime_initialize
+    super()._runtime_initialize()
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 79, in _runtime_initialize
+    self.load_manifest()
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 66, in load_manifest
+    self.manifest = get_full_manifest(self.config)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/perf_utils.py", line 28, in get_full_manifest
+    return load_manifest(
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 862, in load_manifest
+    return ManifestLoader.load_all(config, macro_manifest, macro_hook)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 442, in load_all
+    loader.load(macro_manifest=macro_manifest)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 290, in load
+    self.parse_project(project, macro_manifest, old_results)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 237, in parse_project
+    self.parse_with_cache(path, parser, old_results)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 188, in parse_with_cache
+    parser.parse_file(block)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/parser/schemas.py", line 624, in parse_file
+    dct = self._yaml_from_file(block.file)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/parser/schemas.py", line 250, in _yaml_from_file
+    raise CompilationException(
+dbt.exceptions.CompilationException: Compilation Error
+  Error reading dbt_with_snowflake: snowflake_sample_data/schema.yml - Runtime Error
+    Syntax error near line 3
+    ------------------------------
+    1  | version: 2
+    2  | 
+    3  |   sources:
+    4  |   - name: snowflake_sample_data
+    5  |     description: "A sample database provided by snowflake"
+    6  |     database: snowflake_sample_data
+    
+    Raw Error:
+    ------------------------------
+    mapping values are not allowed here
+      in "<unicode string>", line 3, column 10:
+          sources:
+                 ^
+
+2021-08-18 19:51:18.883370 (MainThread): Running with dbt=0.19.1
+2021-08-18 19:51:19.513583 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.test.TestTask'>, data=False, debug=False, defer=None, exclude=None, fail_fast=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/scottniblock/.dbt', project_dir=None, record_timing_info=None, rpc_method='test', schema=False, selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, vars='{}', version_check=True, warn_error=False, which='test', write_json=True)
+2021-08-18 19:51:19.514495 (MainThread): Tracking: tracking
+2021-08-18 19:51:19.514875 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1033280a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104252a30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104252ac0>]}
+2021-08-18 19:51:19.527894 (MainThread): Partial parsing not enabled
+2021-08-18 19:51:19.529018 (MainThread): Parsing macros/catalog.sql
+2021-08-18 19:51:19.531496 (MainThread): Parsing macros/adapters.sql
+2021-08-18 19:51:19.563113 (MainThread): Parsing macros/materializations/merge.sql
+2021-08-18 19:51:19.565515 (MainThread): Parsing macros/materializations/view.sql
+2021-08-18 19:51:19.567206 (MainThread): Parsing macros/materializations/table.sql
+2021-08-18 19:51:19.571452 (MainThread): Parsing macros/materializations/incremental.sql
+2021-08-18 19:51:19.582480 (MainThread): Parsing macros/core.sql
+2021-08-18 19:51:19.586642 (MainThread): Parsing macros/materializations/helpers.sql
+2021-08-18 19:51:19.596056 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-08-18 19:51:19.597873 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-08-18 19:51:19.617631 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-08-18 19:51:19.690750 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-08-18 19:51:19.714221 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-08-18 19:51:19.716462 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-08-18 19:51:19.722873 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-08-18 19:51:19.737691 (MainThread): Parsing macros/materializations/table/table.sql
+2021-08-18 19:51:19.745120 (MainThread): Parsing macros/materializations/view/view.sql
+2021-08-18 19:51:19.751845 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-08-18 19:51:19.757374 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-08-18 19:51:19.758474 (MainThread): Parsing macros/etc/query.sql
+2021-08-18 19:51:19.759597 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-08-18 19:51:19.761347 (MainThread): Parsing macros/etc/datetime.sql
+2021-08-18 19:51:19.770937 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-08-18 19:51:19.773217 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-08-18 19:51:19.775054 (MainThread): Parsing macros/adapters/common.sql
+2021-08-18 19:51:19.820023 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-08-18 19:51:19.822208 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-08-18 19:51:19.823848 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-08-18 19:51:19.825865 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-08-18 19:51:19.833798 (MainThread): Partial parsing not enabled
+2021-08-18 19:51:19.857920 (MainThread): Acquiring new snowflake connection "model.dbt_with_snowflake.my_first_dbt_model".
+2021-08-18 19:51:19.868160 (MainThread): Acquiring new snowflake connection "model.dbt_with_snowflake.my_second_dbt_model".
+2021-08-18 19:51:19.897450 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1042800a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104394340>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1043a8d60>]}
+2021-08-18 19:51:19.897690 (MainThread): Flushing usage events
+2021-08-18 19:51:20.306263 (MainThread): Connection 'model.dbt_with_snowflake.my_second_dbt_model' was properly closed.
+2021-08-18 19:51:20.306612 (MainThread): Encountered an error:
+2021-08-18 19:51:20.306972 (MainThread): Compilation Error
+  Error reading dbt_with_snowflake: snowflake_sample_data/schema.yml - Runtime Error
+    Syntax error near line 3
+    ------------------------------
+    1  | version: 2
+    2  | 
+    3  |   sources:
+    4  |   - name: snowflake_sample_data
+    5  |     description: 'A sample database provided by snowflake'
+    6  |     database: snowflake_sample_data
+    
+    Raw Error:
+    ------------------------------
+    mapping values are not allowed here
+      in "<unicode string>", line 3, column 10:
+          sources:
+                 ^
+2021-08-18 19:51:20.312195 (MainThread): Traceback (most recent call last):
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/clients/yaml_helper.py", line 65, in load_yaml_text
+    return safe_load(contents)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/clients/yaml_helper.py", line 60, in safe_load
+    return yaml.load(contents, Loader=SafeLoader)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/yaml/__init__.py", line 114, in load
+    return loader.get_single_data()
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/yaml/constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/yaml/composer.py", line 36, in get_single_node
+    document = self.compose_document()
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/yaml/composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/yaml/composer.py", line 127, in compose_mapping_node
+    while not self.check_event(MappingEndEvent):
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/yaml/parser.py", line 98, in check_event
+    self.current_event = self.state()
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/yaml/parser.py", line 428, in parse_block_mapping_key
+    if self.check_token(KeyToken):
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/yaml/scanner.py", line 116, in check_token
+    self.fetch_more_tokens()
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/yaml/scanner.py", line 223, in fetch_more_tokens
+    return self.fetch_value()
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/yaml/scanner.py", line 577, in fetch_value
+    raise ScannerError(None, None,
+yaml.scanner.ScannerError: mapping values are not allowed here
+  in "<unicode string>", line 3, column 10:
+      sources:
+             ^
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/parser/schemas.py", line 247, in _yaml_from_file
+    return load_yaml_text(source_file.contents)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/clients/yaml_helper.py", line 72, in load_yaml_text
+    raise dbt.exceptions.ValidationException(error)
+dbt.exceptions.ValidationException: Runtime Error
+  Syntax error near line 3
+  ------------------------------
+  1  | version: 2
+  2  | 
+  3  |   sources:
+  4  |   - name: snowflake_sample_data
+  5  |     description: 'A sample database provided by snowflake'
+  6  |     database: snowflake_sample_data
+  
+  Raw Error:
+  ------------------------------
+  mapping values are not allowed here
+    in "<unicode string>", line 3, column 10:
+        sources:
+               ^
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/main.py", line 125, in main
+    results, succeeded = handle_and_check(args)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/main.py", line 203, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/main.py", line 256, in run_from_args
+    results = task.run()
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 406, in run
+    self._runtime_initialize()
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 122, in _runtime_initialize
+    super()._runtime_initialize()
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 79, in _runtime_initialize
+    self.load_manifest()
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 66, in load_manifest
+    self.manifest = get_full_manifest(self.config)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/perf_utils.py", line 28, in get_full_manifest
+    return load_manifest(
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 862, in load_manifest
+    return ManifestLoader.load_all(config, macro_manifest, macro_hook)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 442, in load_all
+    loader.load(macro_manifest=macro_manifest)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 290, in load
+    self.parse_project(project, macro_manifest, old_results)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 237, in parse_project
+    self.parse_with_cache(path, parser, old_results)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 188, in parse_with_cache
+    parser.parse_file(block)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/parser/schemas.py", line 624, in parse_file
+    dct = self._yaml_from_file(block.file)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/parser/schemas.py", line 250, in _yaml_from_file
+    raise CompilationException(
+dbt.exceptions.CompilationException: Compilation Error
+  Error reading dbt_with_snowflake: snowflake_sample_data/schema.yml - Runtime Error
+    Syntax error near line 3
+    ------------------------------
+    1  | version: 2
+    2  | 
+    3  |   sources:
+    4  |   - name: snowflake_sample_data
+    5  |     description: 'A sample database provided by snowflake'
+    6  |     database: snowflake_sample_data
+    
+    Raw Error:
+    ------------------------------
+    mapping values are not allowed here
+      in "<unicode string>", line 3, column 10:
+          sources:
+                 ^
+
+2021-08-18 19:55:48.238910 (MainThread): Running with dbt=0.19.1
+2021-08-18 19:55:49.572659 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/scottniblock/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2021-08-18 19:55:49.574627 (MainThread): Tracking: tracking
+2021-08-18 19:55:49.575065 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1052f72e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106224760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1062247f0>]}
+2021-08-18 19:55:49.588731 (MainThread): Partial parsing not enabled
+2021-08-18 19:55:49.590330 (MainThread): Parsing macros/catalog.sql
+2021-08-18 19:55:49.593188 (MainThread): Parsing macros/adapters.sql
+2021-08-18 19:55:49.626215 (MainThread): Parsing macros/materializations/merge.sql
+2021-08-18 19:55:49.628798 (MainThread): Parsing macros/materializations/view.sql
+2021-08-18 19:55:49.630656 (MainThread): Parsing macros/materializations/table.sql
+2021-08-18 19:55:49.635436 (MainThread): Parsing macros/materializations/incremental.sql
+2021-08-18 19:55:49.648352 (MainThread): Parsing macros/core.sql
+2021-08-18 19:55:49.653769 (MainThread): Parsing macros/materializations/helpers.sql
+2021-08-18 19:55:49.664909 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-08-18 19:55:49.668342 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-08-18 19:55:49.692373 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-08-18 19:55:49.768544 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-08-18 19:55:49.794680 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-08-18 19:55:49.797128 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-08-18 19:55:49.804828 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-08-18 19:55:49.821934 (MainThread): Parsing macros/materializations/table/table.sql
+2021-08-18 19:55:49.830446 (MainThread): Parsing macros/materializations/view/view.sql
+2021-08-18 19:55:49.838236 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-08-18 19:55:49.844427 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-08-18 19:55:49.845766 (MainThread): Parsing macros/etc/query.sql
+2021-08-18 19:55:49.847298 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-08-18 19:55:49.849433 (MainThread): Parsing macros/etc/datetime.sql
+2021-08-18 19:55:49.860592 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-08-18 19:55:49.863246 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-08-18 19:55:49.865870 (MainThread): Parsing macros/adapters/common.sql
+2021-08-18 19:55:49.914226 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-08-18 19:55:49.916832 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-08-18 19:55:49.918942 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-08-18 19:55:49.921437 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-08-18 19:55:49.930695 (MainThread): Partial parsing not enabled
+2021-08-18 19:55:49.957950 (MainThread): Acquiring new snowflake connection "model.dbt_with_snowflake.my_first_dbt_model".
+2021-08-18 19:55:49.969459 (MainThread): Acquiring new snowflake connection "model.dbt_with_snowflake.my_second_dbt_model".
+2021-08-18 19:55:49.973560 (MainThread): Acquiring new snowflake connection "model.dbt_with_snowflake.snowflake_sample_data__store_sales".
+2021-08-18 19:55:50.004955 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10624b6a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1063665b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10635ef70>]}
+2021-08-18 19:55:50.005191 (MainThread): Flushing usage events
+2021-08-18 19:55:50.599602 (MainThread): Connection 'model.dbt_with_snowflake.snowflake_sample_data__store_sales' was properly closed.
+2021-08-18 19:55:50.599953 (MainThread): Encountered an error:
+2021-08-18 19:55:50.600218 (MainThread): Compilation Error
+  Error reading dbt_with_snowflake: snowflake_sample_data/schema.yml - Runtime Error
+    Syntax error near line 3
+    ------------------------------
+    1  | version: 2
+    2  | 
+    3  |   sources:
+    4  |   - name: snowflake_sample_data
+    5  |     description: 'A sample database provided by snowflake'
+    6  |     database: snowflake_sample_data
+    
+    Raw Error:
+    ------------------------------
+    mapping values are not allowed here
+      in "<unicode string>", line 3, column 10:
+          sources:
+                 ^
+2021-08-18 19:55:50.605113 (MainThread): Traceback (most recent call last):
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/clients/yaml_helper.py", line 65, in load_yaml_text
+    return safe_load(contents)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/clients/yaml_helper.py", line 60, in safe_load
+    return yaml.load(contents, Loader=SafeLoader)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/yaml/__init__.py", line 114, in load
+    return loader.get_single_data()
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/yaml/constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/yaml/composer.py", line 36, in get_single_node
+    document = self.compose_document()
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/yaml/composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/yaml/composer.py", line 127, in compose_mapping_node
+    while not self.check_event(MappingEndEvent):
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/yaml/parser.py", line 98, in check_event
+    self.current_event = self.state()
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/yaml/parser.py", line 428, in parse_block_mapping_key
+    if self.check_token(KeyToken):
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/yaml/scanner.py", line 116, in check_token
+    self.fetch_more_tokens()
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/yaml/scanner.py", line 223, in fetch_more_tokens
+    return self.fetch_value()
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/yaml/scanner.py", line 577, in fetch_value
+    raise ScannerError(None, None,
+yaml.scanner.ScannerError: mapping values are not allowed here
+  in "<unicode string>", line 3, column 10:
+      sources:
+             ^
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/parser/schemas.py", line 247, in _yaml_from_file
+    return load_yaml_text(source_file.contents)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/clients/yaml_helper.py", line 72, in load_yaml_text
+    raise dbt.exceptions.ValidationException(error)
+dbt.exceptions.ValidationException: Runtime Error
+  Syntax error near line 3
+  ------------------------------
+  1  | version: 2
+  2  | 
+  3  |   sources:
+  4  |   - name: snowflake_sample_data
+  5  |     description: 'A sample database provided by snowflake'
+  6  |     database: snowflake_sample_data
+  
+  Raw Error:
+  ------------------------------
+  mapping values are not allowed here
+    in "<unicode string>", line 3, column 10:
+        sources:
+               ^
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/main.py", line 125, in main
+    results, succeeded = handle_and_check(args)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/main.py", line 203, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/main.py", line 256, in run_from_args
+    results = task.run()
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 406, in run
+    self._runtime_initialize()
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 122, in _runtime_initialize
+    super()._runtime_initialize()
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 79, in _runtime_initialize
+    self.load_manifest()
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 66, in load_manifest
+    self.manifest = get_full_manifest(self.config)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/perf_utils.py", line 28, in get_full_manifest
+    return load_manifest(
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 862, in load_manifest
+    return ManifestLoader.load_all(config, macro_manifest, macro_hook)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 442, in load_all
+    loader.load(macro_manifest=macro_manifest)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 290, in load
+    self.parse_project(project, macro_manifest, old_results)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 237, in parse_project
+    self.parse_with_cache(path, parser, old_results)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 188, in parse_with_cache
+    parser.parse_file(block)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/parser/schemas.py", line 624, in parse_file
+    dct = self._yaml_from_file(block.file)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/parser/schemas.py", line 250, in _yaml_from_file
+    raise CompilationException(
+dbt.exceptions.CompilationException: Compilation Error
+  Error reading dbt_with_snowflake: snowflake_sample_data/schema.yml - Runtime Error
+    Syntax error near line 3
+    ------------------------------
+    1  | version: 2
+    2  | 
+    3  |   sources:
+    4  |   - name: snowflake_sample_data
+    5  |     description: 'A sample database provided by snowflake'
+    6  |     database: snowflake_sample_data
+    
+    Raw Error:
+    ------------------------------
+    mapping values are not allowed here
+      in "<unicode string>", line 3, column 10:
+          sources:
+                 ^
+
+2021-08-18 19:56:26.512610 (MainThread): Running with dbt=0.19.1
+2021-08-18 19:56:27.752578 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/scottniblock/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2021-08-18 19:56:27.754054 (MainThread): Tracking: tracking
+2021-08-18 19:56:27.754409 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111a114c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112993550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1129935e0>]}
+2021-08-18 19:56:27.767646 (MainThread): Partial parsing not enabled
+2021-08-18 19:56:27.768909 (MainThread): Parsing macros/catalog.sql
+2021-08-18 19:56:27.771650 (MainThread): Parsing macros/adapters.sql
+2021-08-18 19:56:27.804102 (MainThread): Parsing macros/materializations/merge.sql
+2021-08-18 19:56:27.806582 (MainThread): Parsing macros/materializations/view.sql
+2021-08-18 19:56:27.808409 (MainThread): Parsing macros/materializations/table.sql
+2021-08-18 19:56:27.813149 (MainThread): Parsing macros/materializations/incremental.sql
+2021-08-18 19:56:27.824663 (MainThread): Parsing macros/core.sql
+2021-08-18 19:56:27.829194 (MainThread): Parsing macros/materializations/helpers.sql
+2021-08-18 19:56:27.838944 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-08-18 19:56:27.840989 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-08-18 19:56:27.861429 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-08-18 19:56:27.951194 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-08-18 19:56:27.976971 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-08-18 19:56:27.979135 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-08-18 19:56:27.985890 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-08-18 19:56:28.000886 (MainThread): Parsing macros/materializations/table/table.sql
+2021-08-18 19:56:28.008828 (MainThread): Parsing macros/materializations/view/view.sql
+2021-08-18 19:56:28.015780 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-08-18 19:56:28.022391 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-08-18 19:56:28.023791 (MainThread): Parsing macros/etc/query.sql
+2021-08-18 19:56:28.025187 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-08-18 19:56:28.027265 (MainThread): Parsing macros/etc/datetime.sql
+2021-08-18 19:56:28.037540 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-08-18 19:56:28.039962 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-08-18 19:56:28.041962 (MainThread): Parsing macros/adapters/common.sql
+2021-08-18 19:56:28.088417 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-08-18 19:56:28.090846 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-08-18 19:56:28.092803 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-08-18 19:56:28.094968 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-08-18 19:56:28.103248 (MainThread): Partial parsing not enabled
+2021-08-18 19:56:28.127590 (MainThread): Acquiring new snowflake connection "model.dbt_with_snowflake.my_first_dbt_model".
+2021-08-18 19:56:28.137949 (MainThread): Acquiring new snowflake connection "model.dbt_with_snowflake.my_second_dbt_model".
+2021-08-18 19:56:28.141605 (MainThread): Acquiring new snowflake connection "model.dbt_with_snowflake.snowflake_sample_data__store_sales".
+2021-08-18 19:56:28.254000 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'dad9c94f-2f28-414f-83a0-19da6302e9d6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112c0fd00>]}
+2021-08-18 19:56:28.265418 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'dad9c94f-2f28-414f-83a0-19da6302e9d6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112bffe20>]}
+2021-08-18 19:56:28.265862 (MainThread): Found 3 models, 4 tests, 0 snapshots, 0 analyses, 143 macros, 0 operations, 0 seed files, 1 source, 0 exposures
+2021-08-18 19:56:28.266847 (MainThread): 
+2021-08-18 19:56:28.267280 (MainThread): Acquiring new snowflake connection "master".
+2021-08-18 19:56:28.268173 (ThreadPoolExecutor-0_0): Acquiring new snowflake connection "list_DEMO_DB".
+2021-08-18 19:56:28.285487 (ThreadPoolExecutor-0_0): Using snowflake connection "list_DEMO_DB".
+2021-08-18 19:56:28.285661 (ThreadPoolExecutor-0_0): On list_DEMO_DB: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "snowflake", "target_name": "dev", "connection_name": "list_DEMO_DB"} */
+
+    show terse schemas in database DEMO_DB
+    limit 10000
+2021-08-18 19:56:28.285795 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-08-18 19:56:29.497419 (ThreadPoolExecutor-0_0): SQL status: SUCCESS 2 in 1.21 seconds
+2021-08-18 19:56:29.505176 (ThreadPoolExecutor-0_0): On list_DEMO_DB: Close
+2021-08-18 19:56:29.769988 (ThreadPoolExecutor-1_0): Acquiring new snowflake connection "list_DEMO_DB_PUBLIC".
+2021-08-18 19:56:29.779116 (ThreadPoolExecutor-1_0): Using snowflake connection "list_DEMO_DB_PUBLIC".
+2021-08-18 19:56:29.779256 (ThreadPoolExecutor-1_0): On list_DEMO_DB_PUBLIC: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "snowflake", "target_name": "dev", "connection_name": "list_DEMO_DB_PUBLIC"} */
+
+    show terse objects in DEMO_DB.PUBLIC
+2021-08-18 19:56:29.779403 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state closed
+2021-08-18 19:56:30.796461 (ThreadPoolExecutor-1_0): SQL status: SUCCESS 2 in 1.02 seconds
+2021-08-18 19:56:30.798028 (ThreadPoolExecutor-1_0): On list_DEMO_DB_PUBLIC: Close
+2021-08-18 19:56:30.999901 (MainThread): Using snowflake connection "master".
+2021-08-18 19:56:31.000083 (MainThread): On master: BEGIN
+2021-08-18 19:56:31.000218 (MainThread): Opening a new connection, currently in state init
+2021-08-18 19:56:31.802196 (MainThread): SQL status: SUCCESS 1 in 0.80 seconds
+2021-08-18 19:56:31.802635 (MainThread): On master: COMMIT
+2021-08-18 19:56:31.803068 (MainThread): Using snowflake connection "master".
+2021-08-18 19:56:31.803317 (MainThread): On master: COMMIT
+2021-08-18 19:56:32.014759 (MainThread): SQL status: SUCCESS 1 in 0.21 seconds
+2021-08-18 19:56:32.015230 (MainThread): On master: Close
+2021-08-18 19:56:32.210330 (MainThread): 14:56:32 | Concurrency: 10 threads (target='dev')
+2021-08-18 19:56:32.210679 (MainThread): 14:56:32 | 
+2021-08-18 19:56:32.214126 (Thread-1): Began running node model.dbt_with_snowflake.my_first_dbt_model
+2021-08-18 19:56:32.214539 (Thread-2): Began running node model.dbt_with_snowflake.snowflake_sample_data__store_sales
+2021-08-18 19:56:32.215064 (Thread-1): 14:56:32 | 1 of 3 START table model PUBLIC.my_first_dbt_model................... [RUN]
+2021-08-18 19:56:32.215528 (Thread-2): 14:56:32 | 2 of 3 START view model PUBLIC.snowflake_sample_data__store_sales.... [RUN]
+2021-08-18 19:56:32.216308 (Thread-1): Acquiring new snowflake connection "model.dbt_with_snowflake.my_first_dbt_model".
+2021-08-18 19:56:32.217135 (Thread-2): Acquiring new snowflake connection "model.dbt_with_snowflake.snowflake_sample_data__store_sales".
+2021-08-18 19:56:32.217365 (Thread-1): Compiling model.dbt_with_snowflake.my_first_dbt_model
+2021-08-18 19:56:32.217592 (Thread-2): Compiling model.dbt_with_snowflake.snowflake_sample_data__store_sales
+2021-08-18 19:56:32.221707 (Thread-1): Writing injected SQL for node "model.dbt_with_snowflake.my_first_dbt_model"
+2021-08-18 19:56:32.224636 (Thread-2): Writing injected SQL for node "model.dbt_with_snowflake.snowflake_sample_data__store_sales"
+2021-08-18 19:56:32.225390 (Thread-2): finished collecting timing info
+2021-08-18 19:56:32.250622 (Thread-1): finished collecting timing info
+2021-08-18 19:56:32.269182 (Thread-2): Writing runtime SQL for node "model.dbt_with_snowflake.snowflake_sample_data__store_sales"
+2021-08-18 19:56:32.285676 (Thread-1): Writing runtime SQL for node "model.dbt_with_snowflake.my_first_dbt_model"
+2021-08-18 19:56:32.286697 (Thread-2): Using snowflake connection "model.dbt_with_snowflake.snowflake_sample_data__store_sales".
+2021-08-18 19:56:32.286820 (Thread-2): On model.dbt_with_snowflake.snowflake_sample_data__store_sales: BEGIN
+2021-08-18 19:56:32.287001 (Thread-2): Opening a new connection, currently in state init
+2021-08-18 19:56:32.287658 (Thread-1): Using snowflake connection "model.dbt_with_snowflake.my_first_dbt_model".
+2021-08-18 19:56:32.288501 (Thread-1): On model.dbt_with_snowflake.my_first_dbt_model: BEGIN
+2021-08-18 19:56:32.288651 (Thread-1): Opening a new connection, currently in state closed
+2021-08-18 19:56:33.174290 (Thread-2): SQL status: SUCCESS 1 in 0.89 seconds
+2021-08-18 19:56:33.174727 (Thread-2): Using snowflake connection "model.dbt_with_snowflake.snowflake_sample_data__store_sales".
+2021-08-18 19:56:33.174997 (Thread-2): On model.dbt_with_snowflake.snowflake_sample_data__store_sales: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.dbt_with_snowflake.snowflake_sample_data__store_sales"} */
+
+  create or replace  view DEMO_DB.PUBLIC.snowflake_sample_data__store_sales  as (
+    with source_store_sales as (
+select * from snowflake_sample_data.TPCDS_SF10TCL.store_sales
+)
+final as(
+  select * from source_store_sales
+)
+select * from final
+  );
+2021-08-18 19:56:33.229939 (Thread-1): SQL status: SUCCESS 1 in 0.94 seconds
+2021-08-18 19:56:33.230088 (Thread-1): Using snowflake connection "model.dbt_with_snowflake.my_first_dbt_model".
+2021-08-18 19:56:33.230183 (Thread-1): On model.dbt_with_snowflake.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.dbt_with_snowflake.my_first_dbt_model"} */
+
+
+      create or replace transient table DEMO_DB.PUBLIC.my_first_dbt_model  as
+      (/*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+      );
+2021-08-18 19:56:33.359423 (Thread-2): Snowflake query id: 019e5b4c-0000-67fb-0000-000087cd403d
+2021-08-18 19:56:33.359801 (Thread-2): Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 5 at position 0 unexpected 'final'.
+syntax error line 8 at position 0 unexpected 'select'.
+2021-08-18 19:56:33.360236 (Thread-2): finished collecting timing info
+2021-08-18 19:56:33.360659 (Thread-2): On model.dbt_with_snowflake.snowflake_sample_data__store_sales: ROLLBACK
+2021-08-18 19:56:33.548760 (Thread-2): On model.dbt_with_snowflake.snowflake_sample_data__store_sales: Close
+2021-08-18 19:56:33.736316 (Thread-2): Database Error in model snowflake_sample_data__store_sales (models/snowflake_sample_data/snowflake_sample_data__store_sales.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 5 at position 0 unexpected 'final'.
+  syntax error line 8 at position 0 unexpected 'select'.
+  compiled SQL at target/run/dbt_with_snowflake/models/snowflake_sample_data/snowflake_sample_data__store_sales.sql
+Traceback (most recent call last):
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 162, in exception_handler
+    yield
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 80, in add_query
+    cursor.execute(sql, bindings)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/snowflake/connector/cursor.py", line 603, in execute
+    Error.errorhandler_wrapper(self.connection, self,
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/snowflake/connector/errors.py", line 125, in errorhandler_wrapper
+    cursor.errorhandler(connection, cursor, error_class, error_value)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/snowflake/connector/errors.py", line 85, in default_errorhandler
+    raise error_class(
+snowflake.connector.errors.ProgrammingError: 001003 (42000): SQL compilation error:
+syntax error line 5 at position 0 unexpected 'final'.
+syntax error line 8 at position 0 unexpected 'select'.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/task/base.py", line 344, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/task/base.py", line 287, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/task/base.py", line 389, in run
+    return self.execute(compiled_node, manifest)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/task/run.py", line 248, in execute
+    result = MacroGenerator(materialization_macro, context)()
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/clients/jinja.py", line 332, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/clients/jinja.py", line 259, in call_macro
+    return macro(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 27, in macro
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/clients/jinja.py", line 332, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/clients/jinja.py", line 259, in call_macro
+    return macro(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 65, in macro
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/clients/jinja.py", line 332, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/clients/jinja.py", line 259, in call_macro
+    return macro(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 41, in macro
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/adapters/base/impl.py", line 227, in execute
+    return self.connections.execute(
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 124, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 314, in add_query
+    connection, cursor = super().add_query(
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 87, in add_query
+    return connection, cursor
+  File "/usr/local/Cellar/python@3.8/3.8.10/Frameworks/Python.framework/Versions/3.8/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 179, in exception_handler
+    raise DatabaseException(msg)
+dbt.exceptions.DatabaseException: Database Error in model snowflake_sample_data__store_sales (models/snowflake_sample_data/snowflake_sample_data__store_sales.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 5 at position 0 unexpected 'final'.
+  syntax error line 8 at position 0 unexpected 'select'.
+  compiled SQL at target/run/dbt_with_snowflake/models/snowflake_sample_data/snowflake_sample_data__store_sales.sql
+2021-08-18 19:56:33.747864 (Thread-2): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'dad9c94f-2f28-414f-83a0-19da6302e9d6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112eb9730>]}
+2021-08-18 19:56:33.748568 (Thread-2): 14:56:33 | 2 of 3 ERROR creating view model PUBLIC.snowflake_sample_data__store_sales [ERROR in 1.53s]
+2021-08-18 19:56:33.748843 (Thread-2): Finished running node model.dbt_with_snowflake.snowflake_sample_data__store_sales
+2021-08-18 19:56:34.390668 (Thread-1): SQL status: SUCCESS 1 in 1.16 seconds
+2021-08-18 19:56:34.391785 (Thread-1): On model.dbt_with_snowflake.my_first_dbt_model: COMMIT
+2021-08-18 19:56:34.391958 (Thread-1): Using snowflake connection "model.dbt_with_snowflake.my_first_dbt_model".
+2021-08-18 19:56:34.392045 (Thread-1): On model.dbt_with_snowflake.my_first_dbt_model: COMMIT
+2021-08-18 19:56:34.520066 (Thread-1): SQL status: SUCCESS 1 in 0.13 seconds
+2021-08-18 19:56:34.538178 (Thread-1): finished collecting timing info
+2021-08-18 19:56:34.538390 (Thread-1): On model.dbt_with_snowflake.my_first_dbt_model: Close
+2021-08-18 19:56:34.787522 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'dad9c94f-2f28-414f-83a0-19da6302e9d6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112fb7be0>]}
+2021-08-18 19:56:34.787879 (Thread-1): 14:56:34 | 1 of 3 OK created table model PUBLIC.my_first_dbt_model.............. [SUCCESS 1 in 2.57s]
+2021-08-18 19:56:34.788014 (Thread-1): Finished running node model.dbt_with_snowflake.my_first_dbt_model
+2021-08-18 19:56:34.788675 (Thread-4): Began running node model.dbt_with_snowflake.my_second_dbt_model
+2021-08-18 19:56:34.789117 (Thread-4): 14:56:34 | 3 of 3 START view model PUBLIC.my_second_dbt_model................... [RUN]
+2021-08-18 19:56:34.789582 (Thread-4): Acquiring new snowflake connection "model.dbt_with_snowflake.my_second_dbt_model".
+2021-08-18 19:56:34.789764 (Thread-4): Compiling model.dbt_with_snowflake.my_second_dbt_model
+2021-08-18 19:56:34.792490 (Thread-4): Writing injected SQL for node "model.dbt_with_snowflake.my_second_dbt_model"
+2021-08-18 19:56:34.793609 (Thread-4): finished collecting timing info
+2021-08-18 19:56:34.795914 (Thread-4): Writing runtime SQL for node "model.dbt_with_snowflake.my_second_dbt_model"
+2021-08-18 19:56:34.796737 (Thread-4): Using snowflake connection "model.dbt_with_snowflake.my_second_dbt_model".
+2021-08-18 19:56:34.796838 (Thread-4): On model.dbt_with_snowflake.my_second_dbt_model: BEGIN
+2021-08-18 19:56:34.796925 (Thread-4): Opening a new connection, currently in state init
+2021-08-18 19:56:35.571740 (Thread-4): SQL status: SUCCESS 1 in 0.77 seconds
+2021-08-18 19:56:35.572160 (Thread-4): Using snowflake connection "model.dbt_with_snowflake.my_second_dbt_model".
+2021-08-18 19:56:35.572417 (Thread-4): On model.dbt_with_snowflake.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.dbt_with_snowflake.my_second_dbt_model"} */
+
+  create or replace  view DEMO_DB.PUBLIC.my_second_dbt_model  as (
+    -- Use the `ref` function to select from other models
+
+select *
+from DEMO_DB.PUBLIC.my_first_dbt_model
+where id = 1
+  );
+2021-08-18 19:56:35.971895 (Thread-4): SQL status: SUCCESS 1 in 0.40 seconds
+2021-08-18 19:56:35.974475 (Thread-4): On model.dbt_with_snowflake.my_second_dbt_model: COMMIT
+2021-08-18 19:56:35.974784 (Thread-4): Using snowflake connection "model.dbt_with_snowflake.my_second_dbt_model".
+2021-08-18 19:56:35.974984 (Thread-4): On model.dbt_with_snowflake.my_second_dbt_model: COMMIT
+2021-08-18 19:56:36.112565 (Thread-4): SQL status: SUCCESS 1 in 0.14 seconds
+2021-08-18 19:56:36.114529 (Thread-4): finished collecting timing info
+2021-08-18 19:56:36.114919 (Thread-4): On model.dbt_with_snowflake.my_second_dbt_model: Close
+2021-08-18 19:56:36.336253 (Thread-4): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'dad9c94f-2f28-414f-83a0-19da6302e9d6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112eb9b50>]}
+2021-08-18 19:56:36.336708 (Thread-4): 14:56:36 | 3 of 3 OK created view model PUBLIC.my_second_dbt_model.............. [SUCCESS 1 in 1.55s]
+2021-08-18 19:56:36.336892 (Thread-4): Finished running node model.dbt_with_snowflake.my_second_dbt_model
+2021-08-18 19:56:36.338445 (MainThread): Acquiring new snowflake connection "master".
+2021-08-18 19:56:36.338650 (MainThread): Using snowflake connection "master".
+2021-08-18 19:56:36.338735 (MainThread): On master: BEGIN
+2021-08-18 19:56:36.338817 (MainThread): Opening a new connection, currently in state closed
+2021-08-18 19:56:37.081217 (MainThread): SQL status: SUCCESS 1 in 0.74 seconds
+2021-08-18 19:56:37.081668 (MainThread): On master: COMMIT
+2021-08-18 19:56:37.082087 (MainThread): Using snowflake connection "master".
+2021-08-18 19:56:37.082332 (MainThread): On master: COMMIT
+2021-08-18 19:56:37.404978 (MainThread): SQL status: SUCCESS 1 in 0.32 seconds
+2021-08-18 19:56:37.405446 (MainThread): On master: Close
+2021-08-18 19:56:37.608866 (MainThread): 14:56:37 | 
+2021-08-18 19:56:37.609195 (MainThread): 14:56:37 | Finished running 2 view models, 1 table model in 9.34s.
+2021-08-18 19:56:37.609415 (MainThread): Connection 'master' was properly closed.
+2021-08-18 19:56:37.609578 (MainThread): Connection 'model.dbt_with_snowflake.my_first_dbt_model' was properly closed.
+2021-08-18 19:56:37.609728 (MainThread): Connection 'model.dbt_with_snowflake.snowflake_sample_data__store_sales' was properly closed.
+2021-08-18 19:56:37.609872 (MainThread): Connection 'model.dbt_with_snowflake.my_second_dbt_model' was properly closed.
+2021-08-18 19:56:37.618371 (MainThread): 
+2021-08-18 19:56:37.618675 (MainThread): Completed with 1 error and 0 warnings:
+2021-08-18 19:56:37.618887 (MainThread): 
+2021-08-18 19:56:37.619077 (MainThread): Database Error in model snowflake_sample_data__store_sales (models/snowflake_sample_data/snowflake_sample_data__store_sales.sql)
+2021-08-18 19:56:37.619249 (MainThread):   001003 (42000): SQL compilation error:
+2021-08-18 19:56:37.619402 (MainThread):   syntax error line 5 at position 0 unexpected 'final'.
+2021-08-18 19:56:37.619551 (MainThread):   syntax error line 8 at position 0 unexpected 'select'.
+2021-08-18 19:56:37.619700 (MainThread):   compiled SQL at target/run/dbt_with_snowflake/models/snowflake_sample_data/snowflake_sample_data__store_sales.sql
+2021-08-18 19:56:37.619874 (MainThread): 
+Done. PASS=2 WARN=0 ERROR=1 SKIP=0 TOTAL=3
+2021-08-18 19:56:37.620157 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112f395e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112f39ee0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112f39940>]}
+2021-08-18 19:56:37.620488 (MainThread): Flushing usage events
+2021-08-18 19:57:04.098946 (MainThread): Running with dbt=0.19.1
+2021-08-18 19:57:05.312455 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/scottniblock/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2021-08-18 19:57:05.313327 (MainThread): Tracking: tracking
+2021-08-18 19:57:05.313621 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10656c2e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1074965e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107496d90>]}
+2021-08-18 19:57:05.326115 (MainThread): Partial parsing not enabled
+2021-08-18 19:57:05.327175 (MainThread): Parsing macros/catalog.sql
+2021-08-18 19:57:05.329706 (MainThread): Parsing macros/adapters.sql
+2021-08-18 19:57:05.361309 (MainThread): Parsing macros/materializations/merge.sql
+2021-08-18 19:57:05.363591 (MainThread): Parsing macros/materializations/view.sql
+2021-08-18 19:57:05.365392 (MainThread): Parsing macros/materializations/table.sql
+2021-08-18 19:57:05.369671 (MainThread): Parsing macros/materializations/incremental.sql
+2021-08-18 19:57:05.380913 (MainThread): Parsing macros/core.sql
+2021-08-18 19:57:05.385020 (MainThread): Parsing macros/materializations/helpers.sql
+2021-08-18 19:57:05.394643 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-08-18 19:57:05.397152 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-08-18 19:57:05.418390 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-08-18 19:57:05.492280 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-08-18 19:57:05.516899 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-08-18 19:57:05.519091 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-08-18 19:57:05.527216 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-08-18 19:57:05.543191 (MainThread): Parsing macros/materializations/table/table.sql
+2021-08-18 19:57:05.550792 (MainThread): Parsing macros/materializations/view/view.sql
+2021-08-18 19:57:05.557881 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-08-18 19:57:05.564442 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-08-18 19:57:05.565809 (MainThread): Parsing macros/etc/query.sql
+2021-08-18 19:57:05.567164 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-08-18 19:57:05.569326 (MainThread): Parsing macros/etc/datetime.sql
+2021-08-18 19:57:05.580619 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-08-18 19:57:05.583175 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-08-18 19:57:05.585689 (MainThread): Parsing macros/adapters/common.sql
+2021-08-18 19:57:05.639032 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-08-18 19:57:05.641590 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-08-18 19:57:05.643513 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-08-18 19:57:05.645608 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-08-18 19:57:05.653866 (MainThread): Partial parsing not enabled
+2021-08-18 19:57:05.678972 (MainThread): Acquiring new snowflake connection "model.dbt_with_snowflake.my_first_dbt_model".
+2021-08-18 19:57:05.691078 (MainThread): Acquiring new snowflake connection "model.dbt_with_snowflake.my_second_dbt_model".
+2021-08-18 19:57:05.699365 (MainThread): Acquiring new snowflake connection "model.dbt_with_snowflake.snowflake_sample_data__store_sales".
+2021-08-18 19:57:05.803305 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '6e0645b1-b2a1-459e-9de6-e49db5cbf76c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107762b50>]}
+2021-08-18 19:57:05.808055 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '6e0645b1-b2a1-459e-9de6-e49db5cbf76c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1077611f0>]}
+2021-08-18 19:57:05.808386 (MainThread): Found 3 models, 4 tests, 0 snapshots, 0 analyses, 143 macros, 0 operations, 0 seed files, 1 source, 0 exposures
+2021-08-18 19:57:05.809230 (MainThread): 
+2021-08-18 19:57:05.809565 (MainThread): Acquiring new snowflake connection "master".
+2021-08-18 19:57:05.810367 (ThreadPoolExecutor-0_0): Acquiring new snowflake connection "list_DEMO_DB".
+2021-08-18 19:57:05.823555 (ThreadPoolExecutor-0_0): Using snowflake connection "list_DEMO_DB".
+2021-08-18 19:57:05.823680 (ThreadPoolExecutor-0_0): On list_DEMO_DB: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "snowflake", "target_name": "dev", "connection_name": "list_DEMO_DB"} */
+
+    show terse schemas in database DEMO_DB
+    limit 10000
+2021-08-18 19:57:05.823775 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-08-18 19:57:06.867313 (ThreadPoolExecutor-0_0): SQL status: SUCCESS 2 in 1.04 seconds
+2021-08-18 19:57:06.874865 (ThreadPoolExecutor-0_0): On list_DEMO_DB: Close
+2021-08-18 19:57:07.063541 (ThreadPoolExecutor-1_0): Acquiring new snowflake connection "list_DEMO_DB_PUBLIC".
+2021-08-18 19:57:07.073139 (ThreadPoolExecutor-1_0): Using snowflake connection "list_DEMO_DB_PUBLIC".
+2021-08-18 19:57:07.073309 (ThreadPoolExecutor-1_0): On list_DEMO_DB_PUBLIC: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "snowflake", "target_name": "dev", "connection_name": "list_DEMO_DB_PUBLIC"} */
+
+    show terse objects in DEMO_DB.PUBLIC
+2021-08-18 19:57:07.073426 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state closed
+2021-08-18 19:57:07.949768 (ThreadPoolExecutor-1_0): SQL status: SUCCESS 2 in 0.88 seconds
+2021-08-18 19:57:07.952232 (ThreadPoolExecutor-1_0): On list_DEMO_DB_PUBLIC: Close
+2021-08-18 19:57:08.143674 (MainThread): Using snowflake connection "master".
+2021-08-18 19:57:08.143925 (MainThread): On master: BEGIN
+2021-08-18 19:57:08.144100 (MainThread): Opening a new connection, currently in state init
+2021-08-18 19:57:08.878911 (MainThread): SQL status: SUCCESS 1 in 0.73 seconds
+2021-08-18 19:57:08.879372 (MainThread): On master: COMMIT
+2021-08-18 19:57:08.879795 (MainThread): Using snowflake connection "master".
+2021-08-18 19:57:08.880044 (MainThread): On master: COMMIT
+2021-08-18 19:57:09.251455 (MainThread): SQL status: SUCCESS 1 in 0.37 seconds
+2021-08-18 19:57:09.251938 (MainThread): On master: Close
+2021-08-18 19:57:09.490579 (MainThread): 14:57:09 | Concurrency: 10 threads (target='dev')
+2021-08-18 19:57:09.490921 (MainThread): 14:57:09 | 
+2021-08-18 19:57:09.494296 (Thread-1): Began running node model.dbt_with_snowflake.my_first_dbt_model
+2021-08-18 19:57:09.494593 (Thread-2): Began running node model.dbt_with_snowflake.snowflake_sample_data__store_sales
+2021-08-18 19:57:09.495119 (Thread-1): 14:57:09 | 1 of 3 START table model PUBLIC.my_first_dbt_model................... [RUN]
+2021-08-18 19:57:09.495519 (Thread-2): 14:57:09 | 2 of 3 START view model PUBLIC.snowflake_sample_data__store_sales.... [RUN]
+2021-08-18 19:57:09.496032 (Thread-1): Acquiring new snowflake connection "model.dbt_with_snowflake.my_first_dbt_model".
+2021-08-18 19:57:09.496625 (Thread-2): Acquiring new snowflake connection "model.dbt_with_snowflake.snowflake_sample_data__store_sales".
+2021-08-18 19:57:09.496826 (Thread-1): Compiling model.dbt_with_snowflake.my_first_dbt_model
+2021-08-18 19:57:09.497016 (Thread-2): Compiling model.dbt_with_snowflake.snowflake_sample_data__store_sales
+2021-08-18 19:57:09.501292 (Thread-2): Writing injected SQL for node "model.dbt_with_snowflake.snowflake_sample_data__store_sales"
+2021-08-18 19:57:09.504010 (Thread-1): Writing injected SQL for node "model.dbt_with_snowflake.my_first_dbt_model"
+2021-08-18 19:57:09.504594 (Thread-2): finished collecting timing info
+2021-08-18 19:57:09.516603 (Thread-1): finished collecting timing info
+2021-08-18 19:57:09.553312 (Thread-2): Writing runtime SQL for node "model.dbt_with_snowflake.snowflake_sample_data__store_sales"
+2021-08-18 19:57:09.559659 (Thread-1): Writing runtime SQL for node "model.dbt_with_snowflake.my_first_dbt_model"
+2021-08-18 19:57:09.560694 (Thread-2): Using snowflake connection "model.dbt_with_snowflake.snowflake_sample_data__store_sales".
+2021-08-18 19:57:09.560802 (Thread-2): On model.dbt_with_snowflake.snowflake_sample_data__store_sales: BEGIN
+2021-08-18 19:57:09.560898 (Thread-2): Opening a new connection, currently in state init
+2021-08-18 19:57:09.562204 (Thread-1): Using snowflake connection "model.dbt_with_snowflake.my_first_dbt_model".
+2021-08-18 19:57:09.562307 (Thread-1): On model.dbt_with_snowflake.my_first_dbt_model: BEGIN
+2021-08-18 19:57:09.562395 (Thread-1): Opening a new connection, currently in state closed
+2021-08-18 19:57:10.396695 (Thread-2): SQL status: SUCCESS 1 in 0.84 seconds
+2021-08-18 19:57:10.396915 (Thread-2): Using snowflake connection "model.dbt_with_snowflake.snowflake_sample_data__store_sales".
+2021-08-18 19:57:10.397035 (Thread-2): On model.dbt_with_snowflake.snowflake_sample_data__store_sales: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.dbt_with_snowflake.snowflake_sample_data__store_sales"} */
+
+  create or replace  view DEMO_DB.PUBLIC.snowflake_sample_data__store_sales  as (
+    with source_store_sales as (
+select * from snowflake_sample_data.TPCDS_SF10TCL.store_sales
+),
+final as(
+  select * from source_store_sales
+)
+select * from final
+  );
+2021-08-18 19:57:10.450132 (Thread-1): SQL status: SUCCESS 1 in 0.89 seconds
+2021-08-18 19:57:10.450520 (Thread-1): Using snowflake connection "model.dbt_with_snowflake.my_first_dbt_model".
+2021-08-18 19:57:10.450744 (Thread-1): On model.dbt_with_snowflake.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.dbt_with_snowflake.my_first_dbt_model"} */
+
+
+      create or replace transient table DEMO_DB.PUBLIC.my_first_dbt_model  as
+      (/*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+      );
+2021-08-18 19:57:10.787902 (Thread-2): SQL status: SUCCESS 1 in 0.39 seconds
+2021-08-18 19:57:10.790660 (Thread-2): On model.dbt_with_snowflake.snowflake_sample_data__store_sales: COMMIT
+2021-08-18 19:57:10.790997 (Thread-2): Using snowflake connection "model.dbt_with_snowflake.snowflake_sample_data__store_sales".
+2021-08-18 19:57:10.791176 (Thread-2): On model.dbt_with_snowflake.snowflake_sample_data__store_sales: COMMIT
+2021-08-18 19:57:10.905251 (Thread-2): SQL status: SUCCESS 1 in 0.11 seconds
+2021-08-18 19:57:10.918827 (Thread-2): finished collecting timing info
+2021-08-18 19:57:10.919136 (Thread-2): On model.dbt_with_snowflake.snowflake_sample_data__store_sales: Close
+2021-08-18 19:57:11.107805 (Thread-2): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6e0645b1-b2a1-459e-9de6-e49db5cbf76c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1077b6ac0>]}
+2021-08-18 19:57:11.108495 (Thread-2): 14:57:11 | 2 of 3 OK created view model PUBLIC.snowflake_sample_data__store_sales [SUCCESS 1 in 1.61s]
+2021-08-18 19:57:11.108786 (Thread-2): Finished running node model.dbt_with_snowflake.snowflake_sample_data__store_sales
+2021-08-18 19:57:11.323958 (Thread-1): SQL status: SUCCESS 1 in 0.87 seconds
+2021-08-18 19:57:11.324973 (Thread-1): On model.dbt_with_snowflake.my_first_dbt_model: COMMIT
+2021-08-18 19:57:11.325156 (Thread-1): Using snowflake connection "model.dbt_with_snowflake.my_first_dbt_model".
+2021-08-18 19:57:11.325249 (Thread-1): On model.dbt_with_snowflake.my_first_dbt_model: COMMIT
+2021-08-18 19:57:11.445776 (Thread-1): SQL status: SUCCESS 1 in 0.12 seconds
+2021-08-18 19:57:11.455234 (Thread-1): finished collecting timing info
+2021-08-18 19:57:11.455525 (Thread-1): On model.dbt_with_snowflake.my_first_dbt_model: Close
+2021-08-18 19:57:11.640713 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6e0645b1-b2a1-459e-9de6-e49db5cbf76c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10976f0a0>]}
+2021-08-18 19:57:11.641093 (Thread-1): 14:57:11 | 1 of 3 OK created table model PUBLIC.my_first_dbt_model.............. [SUCCESS 1 in 2.14s]
+2021-08-18 19:57:11.641240 (Thread-1): Finished running node model.dbt_with_snowflake.my_first_dbt_model
+2021-08-18 19:57:11.641717 (Thread-4): Began running node model.dbt_with_snowflake.my_second_dbt_model
+2021-08-18 19:57:11.642067 (Thread-4): 14:57:11 | 3 of 3 START view model PUBLIC.my_second_dbt_model................... [RUN]
+2021-08-18 19:57:11.642369 (Thread-4): Acquiring new snowflake connection "model.dbt_with_snowflake.my_second_dbt_model".
+2021-08-18 19:57:11.642488 (Thread-4): Compiling model.dbt_with_snowflake.my_second_dbt_model
+2021-08-18 19:57:11.644682 (Thread-4): Writing injected SQL for node "model.dbt_with_snowflake.my_second_dbt_model"
+2021-08-18 19:57:11.645119 (Thread-4): finished collecting timing info
+2021-08-18 19:57:11.647286 (Thread-4): Writing runtime SQL for node "model.dbt_with_snowflake.my_second_dbt_model"
+2021-08-18 19:57:11.648010 (Thread-4): Using snowflake connection "model.dbt_with_snowflake.my_second_dbt_model".
+2021-08-18 19:57:11.648122 (Thread-4): On model.dbt_with_snowflake.my_second_dbt_model: BEGIN
+2021-08-18 19:57:11.648217 (Thread-4): Opening a new connection, currently in state init
+2021-08-18 19:57:12.331634 (Thread-4): SQL status: SUCCESS 1 in 0.68 seconds
+2021-08-18 19:57:12.332060 (Thread-4): Using snowflake connection "model.dbt_with_snowflake.my_second_dbt_model".
+2021-08-18 19:57:12.332316 (Thread-4): On model.dbt_with_snowflake.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.dbt_with_snowflake.my_second_dbt_model"} */
+
+  create or replace  view DEMO_DB.PUBLIC.my_second_dbt_model  as (
+    -- Use the `ref` function to select from other models
+
+select *
+from DEMO_DB.PUBLIC.my_first_dbt_model
+where id = 1
+  );
+2021-08-18 19:57:12.734208 (Thread-4): SQL status: SUCCESS 1 in 0.40 seconds
+2021-08-18 19:57:12.736394 (Thread-4): On model.dbt_with_snowflake.my_second_dbt_model: COMMIT
+2021-08-18 19:57:12.736742 (Thread-4): Using snowflake connection "model.dbt_with_snowflake.my_second_dbt_model".
+2021-08-18 19:57:12.736897 (Thread-4): On model.dbt_with_snowflake.my_second_dbt_model: COMMIT
+2021-08-18 19:57:12.860670 (Thread-4): SQL status: SUCCESS 1 in 0.12 seconds
+2021-08-18 19:57:12.861983 (Thread-4): finished collecting timing info
+2021-08-18 19:57:12.862243 (Thread-4): On model.dbt_with_snowflake.my_second_dbt_model: Close
+2021-08-18 19:57:13.065581 (Thread-4): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6e0645b1-b2a1-459e-9de6-e49db5cbf76c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1079f0d30>]}
+2021-08-18 19:57:13.066269 (Thread-4): 14:57:13 | 3 of 3 OK created view model PUBLIC.my_second_dbt_model.............. [SUCCESS 1 in 1.42s]
+2021-08-18 19:57:13.066548 (Thread-4): Finished running node model.dbt_with_snowflake.my_second_dbt_model
+2021-08-18 19:57:13.069259 (MainThread): Acquiring new snowflake connection "master".
+2021-08-18 19:57:13.069671 (MainThread): Using snowflake connection "master".
+2021-08-18 19:57:13.069864 (MainThread): On master: BEGIN
+2021-08-18 19:57:13.070050 (MainThread): Opening a new connection, currently in state closed
+2021-08-18 19:57:13.844708 (MainThread): SQL status: SUCCESS 1 in 0.77 seconds
+2021-08-18 19:57:13.845068 (MainThread): On master: COMMIT
+2021-08-18 19:57:13.845418 (MainThread): Using snowflake connection "master".
+2021-08-18 19:57:13.845610 (MainThread): On master: COMMIT
+2021-08-18 19:57:14.168634 (MainThread): SQL status: SUCCESS 1 in 0.32 seconds
+2021-08-18 19:57:14.169091 (MainThread): On master: Close
+2021-08-18 19:57:14.364542 (MainThread): 14:57:14 | 
+2021-08-18 19:57:14.364883 (MainThread): 14:57:14 | Finished running 2 view models, 1 table model in 8.55s.
+2021-08-18 19:57:14.365109 (MainThread): Connection 'master' was properly closed.
+2021-08-18 19:57:14.365271 (MainThread): Connection 'model.dbt_with_snowflake.my_first_dbt_model' was properly closed.
+2021-08-18 19:57:14.365424 (MainThread): Connection 'model.dbt_with_snowflake.snowflake_sample_data__store_sales' was properly closed.
+2021-08-18 19:57:14.365571 (MainThread): Connection 'model.dbt_with_snowflake.my_second_dbt_model' was properly closed.
+2021-08-18 19:57:14.374054 (MainThread): 
+2021-08-18 19:57:14.374315 (MainThread): Completed successfully
+2021-08-18 19:57:14.374521 (MainThread): 
+Done. PASS=3 WARN=0 ERROR=0 SKIP=0 TOTAL=3
+2021-08-18 19:57:14.374802 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107983820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107a07250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107a073a0>]}
+2021-08-18 19:57:14.375123 (MainThread): Flushing usage events
+2021-08-18 20:04:54.422111 (MainThread): Running with dbt=0.19.1
+2021-08-18 20:04:55.755856 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/scottniblock/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2021-08-18 20:04:55.757477 (MainThread): Tracking: tracking
+2021-08-18 20:04:55.757846 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103984100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1048bcc10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1048bcca0>]}
+2021-08-18 20:04:55.771137 (MainThread): Partial parsing not enabled
+2021-08-18 20:04:55.772524 (MainThread): Parsing macros/catalog.sql
+2021-08-18 20:04:55.775390 (MainThread): Parsing macros/adapters.sql
+2021-08-18 20:04:55.808381 (MainThread): Parsing macros/materializations/merge.sql
+2021-08-18 20:04:55.810940 (MainThread): Parsing macros/materializations/view.sql
+2021-08-18 20:04:55.812958 (MainThread): Parsing macros/materializations/table.sql
+2021-08-18 20:04:55.817914 (MainThread): Parsing macros/materializations/incremental.sql
+2021-08-18 20:04:55.831451 (MainThread): Parsing macros/core.sql
+2021-08-18 20:04:55.836307 (MainThread): Parsing macros/materializations/helpers.sql
+2021-08-18 20:04:55.846649 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-08-18 20:04:55.848965 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-08-18 20:04:55.871815 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-08-18 20:04:55.948322 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-08-18 20:04:55.974237 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-08-18 20:04:55.976712 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-08-18 20:04:55.984021 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-08-18 20:04:55.999995 (MainThread): Parsing macros/materializations/table/table.sql
+2021-08-18 20:04:56.008588 (MainThread): Parsing macros/materializations/view/view.sql
+2021-08-18 20:04:56.015760 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-08-18 20:04:56.022102 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-08-18 20:04:56.023906 (MainThread): Parsing macros/etc/query.sql
+2021-08-18 20:04:56.026002 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-08-18 20:04:56.028267 (MainThread): Parsing macros/etc/datetime.sql
+2021-08-18 20:04:56.038543 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-08-18 20:04:56.041022 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-08-18 20:04:56.043455 (MainThread): Parsing macros/adapters/common.sql
+2021-08-18 20:04:56.092264 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-08-18 20:04:56.094730 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-08-18 20:04:56.096741 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-08-18 20:04:56.098872 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-08-18 20:04:56.107662 (MainThread): Partial parsing not enabled
+2021-08-18 20:04:56.138239 (MainThread): Acquiring new snowflake connection "model.dbt_with_snowflake.my_first_dbt_model".
+2021-08-18 20:04:56.150835 (MainThread): Acquiring new snowflake connection "model.dbt_with_snowflake.my_second_dbt_model".
+2021-08-18 20:04:56.157128 (MainThread): Acquiring new snowflake connection "model.dbt_with_snowflake.snowflake_sample_data__store_sales".
+2021-08-18 20:04:56.254764 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'b4f02629-5d14-4cd5-877a-fb1f83b41de7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104b7ae80>]}
+2021-08-18 20:04:56.261446 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'b4f02629-5d14-4cd5-877a-fb1f83b41de7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104b79190>]}
+2021-08-18 20:04:56.261749 (MainThread): Found 3 models, 4 tests, 0 snapshots, 0 analyses, 143 macros, 0 operations, 0 seed files, 1 source, 0 exposures
+2021-08-18 20:04:56.262655 (MainThread): 
+2021-08-18 20:04:56.262997 (MainThread): Acquiring new snowflake connection "master".
+2021-08-18 20:04:56.263832 (ThreadPoolExecutor-0_0): Acquiring new snowflake connection "list_DEMO_DB".
+2021-08-18 20:04:56.277863 (ThreadPoolExecutor-0_0): Using snowflake connection "list_DEMO_DB".
+2021-08-18 20:04:56.278002 (ThreadPoolExecutor-0_0): On list_DEMO_DB: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "snowflake", "target_name": "dev", "connection_name": "list_DEMO_DB"} */
+
+    show terse schemas in database DEMO_DB
+    limit 10000
+2021-08-18 20:04:56.278097 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-08-18 20:04:57.425565 (ThreadPoolExecutor-0_0): SQL status: SUCCESS 2 in 1.15 seconds
+2021-08-18 20:04:57.429877 (ThreadPoolExecutor-0_0): On list_DEMO_DB: Close
+2021-08-18 20:04:57.651342 (ThreadPoolExecutor-1_0): Acquiring new snowflake connection "list_DEMO_DB_PUBLIC".
+2021-08-18 20:04:57.659482 (ThreadPoolExecutor-1_0): Using snowflake connection "list_DEMO_DB_PUBLIC".
+2021-08-18 20:04:57.659630 (ThreadPoolExecutor-1_0): On list_DEMO_DB_PUBLIC: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "snowflake", "target_name": "dev", "connection_name": "list_DEMO_DB_PUBLIC"} */
+
+    show terse objects in DEMO_DB.PUBLIC
+2021-08-18 20:04:57.659725 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state closed
+2021-08-18 20:04:58.363551 (ThreadPoolExecutor-1_0): SQL status: SUCCESS 3 in 0.70 seconds
+2021-08-18 20:04:58.364595 (ThreadPoolExecutor-1_0): On list_DEMO_DB_PUBLIC: Close
+2021-08-18 20:04:58.542160 (MainThread): Using snowflake connection "master".
+2021-08-18 20:04:58.542307 (MainThread): On master: BEGIN
+2021-08-18 20:04:58.542401 (MainThread): Opening a new connection, currently in state init
+2021-08-18 20:04:59.387372 (MainThread): unclosed <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('192.168.1.100', 51716), raddr=('52.183.89.201', 443)>
+2021-08-18 20:04:59.388649 (MainThread): SQL status: SUCCESS 1 in 0.85 seconds
+2021-08-18 20:04:59.388995 (MainThread): On master: COMMIT
+2021-08-18 20:04:59.389382 (MainThread): Using snowflake connection "master".
+2021-08-18 20:04:59.389615 (MainThread): On master: COMMIT
+2021-08-18 20:05:00.011554 (MainThread): SQL status: SUCCESS 1 in 0.62 seconds
+2021-08-18 20:05:00.012134 (MainThread): On master: Close
+2021-08-18 20:05:00.205784 (MainThread): 15:05:00 | Concurrency: 10 threads (target='dev')
+2021-08-18 20:05:00.206130 (MainThread): 15:05:00 | 
+2021-08-18 20:05:00.209466 (Thread-1): Began running node model.dbt_with_snowflake.my_first_dbt_model
+2021-08-18 20:05:00.209820 (Thread-2): Began running node model.dbt_with_snowflake.snowflake_sample_data__store_sales
+2021-08-18 20:05:00.210429 (Thread-1): 15:05:00 | 1 of 3 START table model PUBLIC.my_first_dbt_model................... [RUN]
+2021-08-18 20:05:00.210862 (Thread-2): 15:05:00 | 2 of 3 START view model PUBLIC.snowflake_sample_data__store_sales.... [RUN]
+2021-08-18 20:05:00.211430 (Thread-1): Acquiring new snowflake connection "model.dbt_with_snowflake.my_first_dbt_model".
+2021-08-18 20:05:00.211908 (Thread-2): Acquiring new snowflake connection "model.dbt_with_snowflake.snowflake_sample_data__store_sales".
+2021-08-18 20:05:00.212133 (Thread-1): Compiling model.dbt_with_snowflake.my_first_dbt_model
+2021-08-18 20:05:00.212308 (Thread-2): Compiling model.dbt_with_snowflake.snowflake_sample_data__store_sales
+2021-08-18 20:05:00.216291 (Thread-1): Writing injected SQL for node "model.dbt_with_snowflake.my_first_dbt_model"
+2021-08-18 20:05:00.218944 (Thread-2): Writing injected SQL for node "model.dbt_with_snowflake.snowflake_sample_data__store_sales"
+2021-08-18 20:05:00.220262 (Thread-1): finished collecting timing info
+2021-08-18 20:05:00.225901 (Thread-2): finished collecting timing info
+2021-08-18 20:05:00.267094 (Thread-2): Writing runtime SQL for node "model.dbt_with_snowflake.snowflake_sample_data__store_sales"
+2021-08-18 20:05:00.272013 (Thread-1): Writing runtime SQL for node "model.dbt_with_snowflake.my_first_dbt_model"
+2021-08-18 20:05:00.273077 (Thread-1): Using snowflake connection "model.dbt_with_snowflake.my_first_dbt_model".
+2021-08-18 20:05:00.273180 (Thread-1): On model.dbt_with_snowflake.my_first_dbt_model: BEGIN
+2021-08-18 20:05:00.273784 (Thread-2): Using snowflake connection "model.dbt_with_snowflake.snowflake_sample_data__store_sales".
+2021-08-18 20:05:00.273870 (Thread-1): Opening a new connection, currently in state closed
+2021-08-18 20:05:00.273964 (Thread-2): On model.dbt_with_snowflake.snowflake_sample_data__store_sales: BEGIN
+2021-08-18 20:05:00.274961 (Thread-2): Opening a new connection, currently in state init
+2021-08-18 20:05:01.124321 (Thread-1): SQL status: SUCCESS 1 in 0.85 seconds
+2021-08-18 20:05:01.124521 (Thread-1): Using snowflake connection "model.dbt_with_snowflake.my_first_dbt_model".
+2021-08-18 20:05:01.124622 (Thread-1): On model.dbt_with_snowflake.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.dbt_with_snowflake.my_first_dbt_model"} */
+
+
+      create or replace transient table DEMO_DB.PUBLIC.my_first_dbt_model  as
+      (/*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+      );
+2021-08-18 20:05:01.326111 (Thread-2): SQL status: SUCCESS 1 in 1.05 seconds
+2021-08-18 20:05:01.326518 (Thread-2): Using snowflake connection "model.dbt_with_snowflake.snowflake_sample_data__store_sales".
+2021-08-18 20:05:01.326774 (Thread-2): On model.dbt_with_snowflake.snowflake_sample_data__store_sales: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.dbt_with_snowflake.snowflake_sample_data__store_sales"} */
+
+  create or replace  view DEMO_DB.PUBLIC.snowflake_sample_data__store_sales  as (
+    with source_store_sales as (
+select * from snowflake_sample_data.TPCDS_SF10TCL.store_sales
+),
+final as(
+  select * from source_store_sales
+)
+select * from final
+  );
+2021-08-18 20:05:01.700583 (Thread-2): SQL status: SUCCESS 1 in 0.37 seconds
+2021-08-18 20:05:01.703360 (Thread-2): On model.dbt_with_snowflake.snowflake_sample_data__store_sales: COMMIT
+2021-08-18 20:05:01.703693 (Thread-2): Using snowflake connection "model.dbt_with_snowflake.snowflake_sample_data__store_sales".
+2021-08-18 20:05:01.704028 (Thread-2): On model.dbt_with_snowflake.snowflake_sample_data__store_sales: COMMIT
+2021-08-18 20:05:01.833059 (Thread-2): SQL status: SUCCESS 1 in 0.13 seconds
+2021-08-18 20:05:01.845977 (Thread-2): finished collecting timing info
+2021-08-18 20:05:01.846281 (Thread-2): On model.dbt_with_snowflake.snowflake_sample_data__store_sales: Close
+2021-08-18 20:05:01.869435 (Thread-1): SQL status: SUCCESS 1 in 0.74 seconds
+2021-08-18 20:05:01.872218 (Thread-1): On model.dbt_with_snowflake.my_first_dbt_model: COMMIT
+2021-08-18 20:05:01.872606 (Thread-1): Using snowflake connection "model.dbt_with_snowflake.my_first_dbt_model".
+2021-08-18 20:05:01.872801 (Thread-1): On model.dbt_with_snowflake.my_first_dbt_model: COMMIT
+2021-08-18 20:05:01.987079 (Thread-1): SQL status: SUCCESS 1 in 0.11 seconds
+2021-08-18 20:05:01.996745 (Thread-1): finished collecting timing info
+2021-08-18 20:05:01.997045 (Thread-1): On model.dbt_with_snowflake.my_first_dbt_model: Close
+2021-08-18 20:05:02.036417 (Thread-2): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b4f02629-5d14-4cd5-877a-fb1f83b41de7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104ddcb50>]}
+2021-08-18 20:05:02.037109 (Thread-2): 15:05:02 | 2 of 3 OK created view model PUBLIC.snowflake_sample_data__store_sales [SUCCESS 1 in 1.82s]
+2021-08-18 20:05:02.037407 (Thread-2): Finished running node model.dbt_with_snowflake.snowflake_sample_data__store_sales
+2021-08-18 20:05:02.218291 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b4f02629-5d14-4cd5-877a-fb1f83b41de7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104ddce50>]}
+2021-08-18 20:05:02.218967 (Thread-1): 15:05:02 | 1 of 3 OK created table model PUBLIC.my_first_dbt_model.............. [SUCCESS 1 in 2.01s]
+2021-08-18 20:05:02.219244 (Thread-1): Finished running node model.dbt_with_snowflake.my_first_dbt_model
+2021-08-18 20:05:02.220409 (Thread-4): Began running node model.dbt_with_snowflake.my_second_dbt_model
+2021-08-18 20:05:02.221413 (Thread-4): 15:05:02 | 3 of 3 START view model PUBLIC.my_second_dbt_model................... [RUN]
+2021-08-18 20:05:02.222155 (Thread-4): Acquiring new snowflake connection "model.dbt_with_snowflake.my_second_dbt_model".
+2021-08-18 20:05:02.222551 (Thread-4): Compiling model.dbt_with_snowflake.my_second_dbt_model
+2021-08-18 20:05:02.226261 (Thread-4): Writing injected SQL for node "model.dbt_with_snowflake.my_second_dbt_model"
+2021-08-18 20:05:02.227978 (Thread-4): finished collecting timing info
+2021-08-18 20:05:02.232333 (Thread-4): Writing runtime SQL for node "model.dbt_with_snowflake.my_second_dbt_model"
+2021-08-18 20:05:02.233523 (Thread-4): Using snowflake connection "model.dbt_with_snowflake.my_second_dbt_model".
+2021-08-18 20:05:02.233663 (Thread-4): On model.dbt_with_snowflake.my_second_dbt_model: BEGIN
+2021-08-18 20:05:02.233787 (Thread-4): Opening a new connection, currently in state init
+2021-08-18 20:05:02.944115 (Thread-4): SQL status: SUCCESS 1 in 0.71 seconds
+2021-08-18 20:05:02.944580 (Thread-4): Using snowflake connection "model.dbt_with_snowflake.my_second_dbt_model".
+2021-08-18 20:05:02.944868 (Thread-4): On model.dbt_with_snowflake.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.dbt_with_snowflake.my_second_dbt_model"} */
+
+  create or replace  view DEMO_DB.PUBLIC.my_second_dbt_model  as (
+    -- Use the `ref` function to select from other models
+
+select *
+from DEMO_DB.PUBLIC.my_first_dbt_model
+where id = 1
+  );
+2021-08-18 20:05:03.363108 (Thread-4): SQL status: SUCCESS 1 in 0.42 seconds
+2021-08-18 20:05:03.364081 (Thread-4): On model.dbt_with_snowflake.my_second_dbt_model: COMMIT
+2021-08-18 20:05:03.364246 (Thread-4): Using snowflake connection "model.dbt_with_snowflake.my_second_dbt_model".
+2021-08-18 20:05:03.364330 (Thread-4): On model.dbt_with_snowflake.my_second_dbt_model: COMMIT
+2021-08-18 20:05:03.513961 (Thread-4): SQL status: SUCCESS 1 in 0.15 seconds
+2021-08-18 20:05:03.515954 (Thread-4): finished collecting timing info
+2021-08-18 20:05:03.516525 (Thread-4): On model.dbt_with_snowflake.my_second_dbt_model: Close
+2021-08-18 20:05:03.722718 (Thread-4): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b4f02629-5d14-4cd5-877a-fb1f83b41de7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106b162e0>]}
+2021-08-18 20:05:03.723401 (Thread-4): 15:05:03 | 3 of 3 OK created view model PUBLIC.my_second_dbt_model.............. [SUCCESS 1 in 1.50s]
+2021-08-18 20:05:03.723679 (Thread-4): Finished running node model.dbt_with_snowflake.my_second_dbt_model
+2021-08-18 20:05:03.726218 (MainThread): Acquiring new snowflake connection "master".
+2021-08-18 20:05:03.726618 (MainThread): Using snowflake connection "master".
+2021-08-18 20:05:03.726801 (MainThread): On master: BEGIN
+2021-08-18 20:05:03.726986 (MainThread): Opening a new connection, currently in state closed
+2021-08-18 20:05:04.457808 (MainThread): SQL status: SUCCESS 1 in 0.73 seconds
+2021-08-18 20:05:04.458036 (MainThread): On master: COMMIT
+2021-08-18 20:05:04.458238 (MainThread): Using snowflake connection "master".
+2021-08-18 20:05:04.458351 (MainThread): On master: COMMIT
+2021-08-18 20:05:04.671771 (MainThread): SQL status: SUCCESS 1 in 0.21 seconds
+2021-08-18 20:05:04.671963 (MainThread): On master: Close
+2021-08-18 20:05:04.866105 (MainThread): 15:05:04 | 
+2021-08-18 20:05:04.866403 (MainThread): 15:05:04 | Finished running 2 view models, 1 table model in 8.60s.
+2021-08-18 20:05:04.866594 (MainThread): Connection 'master' was properly closed.
+2021-08-18 20:05:04.866733 (MainThread): Connection 'model.dbt_with_snowflake.my_first_dbt_model' was properly closed.
+2021-08-18 20:05:04.866861 (MainThread): Connection 'model.dbt_with_snowflake.snowflake_sample_data__store_sales' was properly closed.
+2021-08-18 20:05:04.866985 (MainThread): Connection 'model.dbt_with_snowflake.my_second_dbt_model' was properly closed.
+2021-08-18 20:05:04.874318 (MainThread): 
+2021-08-18 20:05:04.874531 (MainThread): Completed successfully
+2021-08-18 20:05:04.874690 (MainThread): 
+Done. PASS=3 WARN=0 ERROR=0 SKIP=0 TOTAL=3
+2021-08-18 20:05:04.874914 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104b85d60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104dd01f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104dd0340>]}
+2021-08-18 20:05:04.875169 (MainThread): Flushing usage events
+2021-08-18 20:05:56.394105 (MainThread): Running with dbt=0.19.1
+2021-08-18 20:05:57.638554 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/scottniblock/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2021-08-18 20:05:57.640770 (MainThread): Tracking: tracking
+2021-08-18 20:05:57.641311 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1085882e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1094b3cd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1094b3d60>]}
+2021-08-18 20:05:57.656517 (MainThread): Partial parsing not enabled
+2021-08-18 20:05:57.657854 (MainThread): Parsing macros/catalog.sql
+2021-08-18 20:05:57.660736 (MainThread): Parsing macros/adapters.sql
+2021-08-18 20:05:57.694074 (MainThread): Parsing macros/materializations/merge.sql
+2021-08-18 20:05:57.696701 (MainThread): Parsing macros/materializations/view.sql
+2021-08-18 20:05:57.698644 (MainThread): Parsing macros/materializations/table.sql
+2021-08-18 20:05:57.703294 (MainThread): Parsing macros/materializations/incremental.sql
+2021-08-18 20:05:57.715602 (MainThread): Parsing macros/core.sql
+2021-08-18 20:05:57.720301 (MainThread): Parsing macros/materializations/helpers.sql
+2021-08-18 20:05:57.730222 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-08-18 20:05:57.732409 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-08-18 20:05:57.754601 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-08-18 20:05:57.830653 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-08-18 20:05:57.856560 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-08-18 20:05:57.858882 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-08-18 20:05:57.865708 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-08-18 20:05:57.881364 (MainThread): Parsing macros/materializations/table/table.sql
+2021-08-18 20:05:57.889232 (MainThread): Parsing macros/materializations/view/view.sql
+2021-08-18 20:05:57.896168 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-08-18 20:05:57.901931 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-08-18 20:05:57.903155 (MainThread): Parsing macros/etc/query.sql
+2021-08-18 20:05:57.904697 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-08-18 20:05:57.906804 (MainThread): Parsing macros/etc/datetime.sql
+2021-08-18 20:05:57.918125 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-08-18 20:05:57.920686 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-08-18 20:05:57.923312 (MainThread): Parsing macros/adapters/common.sql
+2021-08-18 20:05:57.971175 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-08-18 20:05:57.973964 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-08-18 20:05:57.976375 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-08-18 20:05:57.978918 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-08-18 20:05:57.987948 (MainThread): Partial parsing not enabled
+2021-08-18 20:05:58.013556 (MainThread): Acquiring new snowflake connection "model.dbt_with_snowflake.my_first_dbt_model".
+2021-08-18 20:05:58.025059 (MainThread): Acquiring new snowflake connection "model.dbt_with_snowflake.my_second_dbt_model".
+2021-08-18 20:05:58.029076 (MainThread): Acquiring new snowflake connection "model.dbt_with_snowflake.snowflake_sample_data__store_sales".
+2021-08-18 20:05:58.116651 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '8a36b3e5-0e62-475a-b1f7-7dce5970a8b9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109791d60>]}
+2021-08-18 20:05:58.126336 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '8a36b3e5-0e62-475a-b1f7-7dce5970a8b9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1095ee250>]}
+2021-08-18 20:05:58.126742 (MainThread): Found 3 models, 4 tests, 0 snapshots, 0 analyses, 143 macros, 0 operations, 0 seed files, 1 source, 0 exposures
+2021-08-18 20:05:58.127674 (MainThread): 
+2021-08-18 20:05:58.128171 (MainThread): Acquiring new snowflake connection "master".
+2021-08-18 20:05:58.129268 (ThreadPoolExecutor-0_0): Acquiring new snowflake connection "list_DEMO_DB".
+2021-08-18 20:05:58.145101 (ThreadPoolExecutor-0_0): Using snowflake connection "list_DEMO_DB".
+2021-08-18 20:05:58.145239 (ThreadPoolExecutor-0_0): On list_DEMO_DB: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "snowflake", "target_name": "dev", "connection_name": "list_DEMO_DB"} */
+
+    show terse schemas in database DEMO_DB
+    limit 10000
+2021-08-18 20:05:58.145337 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-08-18 20:05:59.207200 (ThreadPoolExecutor-0_0): SQL status: SUCCESS 2 in 1.06 seconds
+2021-08-18 20:05:59.214495 (ThreadPoolExecutor-0_0): On list_DEMO_DB: Close
+2021-08-18 20:05:59.401146 (ThreadPoolExecutor-1_0): Acquiring new snowflake connection "list_DEMO_DB_PUBLIC".
+2021-08-18 20:05:59.413726 (ThreadPoolExecutor-1_0): Using snowflake connection "list_DEMO_DB_PUBLIC".
+2021-08-18 20:05:59.413921 (ThreadPoolExecutor-1_0): On list_DEMO_DB_PUBLIC: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "snowflake", "target_name": "dev", "connection_name": "list_DEMO_DB_PUBLIC"} */
+
+    show terse objects in DEMO_DB.PUBLIC
+2021-08-18 20:05:59.414055 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state closed
+2021-08-18 20:06:00.078425 (ThreadPoolExecutor-1_0): SQL status: SUCCESS 3 in 0.66 seconds
+2021-08-18 20:06:00.080026 (ThreadPoolExecutor-1_0): On list_DEMO_DB_PUBLIC: Close
+2021-08-18 20:06:00.265211 (MainThread): Using snowflake connection "master".
+2021-08-18 20:06:00.265361 (MainThread): On master: BEGIN
+2021-08-18 20:06:00.265459 (MainThread): Opening a new connection, currently in state init
+2021-08-18 20:06:01.267669 (MainThread): SQL status: SUCCESS 1 in 1.00 seconds
+2021-08-18 20:06:01.268126 (MainThread): On master: COMMIT
+2021-08-18 20:06:01.268542 (MainThread): Using snowflake connection "master".
+2021-08-18 20:06:01.268786 (MainThread): On master: COMMIT
+2021-08-18 20:06:01.633215 (MainThread): SQL status: SUCCESS 1 in 0.36 seconds
+2021-08-18 20:06:01.633662 (MainThread): On master: Close
+2021-08-18 20:06:01.833425 (MainThread): 15:06:01 | Concurrency: 10 threads (target='dev')
+2021-08-18 20:06:01.833774 (MainThread): 15:06:01 | 
+2021-08-18 20:06:01.837044 (Thread-1): Began running node model.dbt_with_snowflake.my_first_dbt_model
+2021-08-18 20:06:01.837330 (Thread-2): Began running node model.dbt_with_snowflake.snowflake_sample_data__store_sales
+2021-08-18 20:06:01.837847 (Thread-1): 15:06:01 | 1 of 3 START table model PUBLIC.my_first_dbt_model................... [RUN]
+2021-08-18 20:06:01.838248 (Thread-2): 15:06:01 | 2 of 3 START view model PUBLIC.snowflake_sample_data__store_sales.... [RUN]
+2021-08-18 20:06:01.838724 (Thread-1): Acquiring new snowflake connection "model.dbt_with_snowflake.my_first_dbt_model".
+2021-08-18 20:06:01.839159 (Thread-2): Acquiring new snowflake connection "model.dbt_with_snowflake.snowflake_sample_data__store_sales".
+2021-08-18 20:06:01.839417 (Thread-1): Compiling model.dbt_with_snowflake.my_first_dbt_model
+2021-08-18 20:06:01.839669 (Thread-2): Compiling model.dbt_with_snowflake.snowflake_sample_data__store_sales
+2021-08-18 20:06:01.844024 (Thread-2): Writing injected SQL for node "model.dbt_with_snowflake.snowflake_sample_data__store_sales"
+2021-08-18 20:06:01.847069 (Thread-1): Writing injected SQL for node "model.dbt_with_snowflake.my_first_dbt_model"
+2021-08-18 20:06:01.849377 (Thread-2): finished collecting timing info
+2021-08-18 20:06:01.849641 (Thread-1): finished collecting timing info
+2021-08-18 20:06:01.898076 (Thread-2): Writing runtime SQL for node "model.dbt_with_snowflake.snowflake_sample_data__store_sales"
+2021-08-18 20:06:01.903843 (Thread-1): Writing runtime SQL for node "model.dbt_with_snowflake.my_first_dbt_model"
+2021-08-18 20:06:01.905816 (Thread-1): Using snowflake connection "model.dbt_with_snowflake.my_first_dbt_model".
+2021-08-18 20:06:01.905967 (Thread-1): On model.dbt_with_snowflake.my_first_dbt_model: BEGIN
+2021-08-18 20:06:01.906068 (Thread-1): Opening a new connection, currently in state closed
+2021-08-18 20:06:01.908150 (Thread-2): Using snowflake connection "model.dbt_with_snowflake.snowflake_sample_data__store_sales".
+2021-08-18 20:06:01.908263 (Thread-2): On model.dbt_with_snowflake.snowflake_sample_data__store_sales: BEGIN
+2021-08-18 20:06:01.908357 (Thread-2): Opening a new connection, currently in state init
+2021-08-18 20:06:02.757859 (Thread-2): SQL status: SUCCESS 1 in 0.85 seconds
+2021-08-18 20:06:02.758226 (Thread-2): Using snowflake connection "model.dbt_with_snowflake.snowflake_sample_data__store_sales".
+2021-08-18 20:06:02.758406 (Thread-2): On model.dbt_with_snowflake.snowflake_sample_data__store_sales: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.dbt_with_snowflake.snowflake_sample_data__store_sales"} */
+
+  create or replace  view DEMO_DB.PUBLIC.snowflake_sample_data__store_sales  as (
+    with source_store_sales as (
+select * from snowflake_sample_data.TPCDS_SF10TCL.store_sales
+),
+final as(
+  select * from source_store_sales
+)
+select * from final
+  );
+2021-08-18 20:06:02.803688 (Thread-1): SQL status: SUCCESS 1 in 0.90 seconds
+2021-08-18 20:06:02.803974 (Thread-1): Using snowflake connection "model.dbt_with_snowflake.my_first_dbt_model".
+2021-08-18 20:06:02.804166 (Thread-1): On model.dbt_with_snowflake.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.dbt_with_snowflake.my_first_dbt_model"} */
+
+
+      create or replace transient table DEMO_DB.PUBLIC.my_first_dbt_model  as
+      (/*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+      );
+2021-08-18 20:06:03.165558 (Thread-2): SQL status: SUCCESS 1 in 0.41 seconds
+2021-08-18 20:06:03.168353 (Thread-2): On model.dbt_with_snowflake.snowflake_sample_data__store_sales: COMMIT
+2021-08-18 20:06:03.168680 (Thread-2): Using snowflake connection "model.dbt_with_snowflake.snowflake_sample_data__store_sales".
+2021-08-18 20:06:03.168857 (Thread-2): On model.dbt_with_snowflake.snowflake_sample_data__store_sales: COMMIT
+2021-08-18 20:06:03.310894 (Thread-2): SQL status: SUCCESS 1 in 0.14 seconds
+2021-08-18 20:06:03.324300 (Thread-2): finished collecting timing info
+2021-08-18 20:06:03.324603 (Thread-2): On model.dbt_with_snowflake.snowflake_sample_data__store_sales: Close
+2021-08-18 20:06:03.515424 (Thread-2): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8a36b3e5-0e62-475a-b1f7-7dce5970a8b9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1099d3670>]}
+2021-08-18 20:06:03.516159 (Thread-2): 15:06:03 | 2 of 3 OK created view model PUBLIC.snowflake_sample_data__store_sales [SUCCESS 1 in 1.68s]
+2021-08-18 20:06:03.516451 (Thread-2): Finished running node model.dbt_with_snowflake.snowflake_sample_data__store_sales
+2021-08-18 20:06:03.681999 (Thread-1): SQL status: SUCCESS 1 in 0.88 seconds
+2021-08-18 20:06:03.684449 (Thread-1): On model.dbt_with_snowflake.my_first_dbt_model: COMMIT
+2021-08-18 20:06:03.684764 (Thread-1): Using snowflake connection "model.dbt_with_snowflake.my_first_dbt_model".
+2021-08-18 20:06:03.684941 (Thread-1): On model.dbt_with_snowflake.my_first_dbt_model: COMMIT
+2021-08-18 20:06:03.845574 (Thread-1): SQL status: SUCCESS 1 in 0.16 seconds
+2021-08-18 20:06:03.850864 (Thread-1): finished collecting timing info
+2021-08-18 20:06:03.851073 (Thread-1): On model.dbt_with_snowflake.my_first_dbt_model: Close
+2021-08-18 20:06:04.039342 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8a36b3e5-0e62-475a-b1f7-7dce5970a8b9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109b2c9d0>]}
+2021-08-18 20:06:04.040023 (Thread-1): 15:06:04 | 1 of 3 OK created table model PUBLIC.my_first_dbt_model.............. [SUCCESS 1 in 2.20s]
+2021-08-18 20:06:04.040291 (Thread-1): Finished running node model.dbt_with_snowflake.my_first_dbt_model
+2021-08-18 20:06:04.041225 (Thread-4): Began running node model.dbt_with_snowflake.my_second_dbt_model
+2021-08-18 20:06:04.041690 (Thread-4): 15:06:04 | 3 of 3 START view model PUBLIC.my_second_dbt_model................... [RUN]
+2021-08-18 20:06:04.042414 (Thread-4): Acquiring new snowflake connection "model.dbt_with_snowflake.my_second_dbt_model".
+2021-08-18 20:06:04.042662 (Thread-4): Compiling model.dbt_with_snowflake.my_second_dbt_model
+2021-08-18 20:06:04.046437 (Thread-4): Writing injected SQL for node "model.dbt_with_snowflake.my_second_dbt_model"
+2021-08-18 20:06:04.047131 (Thread-4): finished collecting timing info
+2021-08-18 20:06:04.050899 (Thread-4): Writing runtime SQL for node "model.dbt_with_snowflake.my_second_dbt_model"
+2021-08-18 20:06:04.051896 (Thread-4): Using snowflake connection "model.dbt_with_snowflake.my_second_dbt_model".
+2021-08-18 20:06:04.052033 (Thread-4): On model.dbt_with_snowflake.my_second_dbt_model: BEGIN
+2021-08-18 20:06:04.052156 (Thread-4): Opening a new connection, currently in state init
+2021-08-18 20:06:04.745605 (Thread-4): SQL status: SUCCESS 1 in 0.69 seconds
+2021-08-18 20:06:04.745908 (Thread-4): Using snowflake connection "model.dbt_with_snowflake.my_second_dbt_model".
+2021-08-18 20:06:04.746093 (Thread-4): On model.dbt_with_snowflake.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.dbt_with_snowflake.my_second_dbt_model"} */
+
+  create or replace  view DEMO_DB.PUBLIC.my_second_dbt_model  as (
+    -- Use the `ref` function to select from other models
+
+select *
+from DEMO_DB.PUBLIC.my_first_dbt_model
+where id = 1
+  );
+2021-08-18 20:06:05.072862 (Thread-4): SQL status: SUCCESS 1 in 0.33 seconds
+2021-08-18 20:06:05.075432 (Thread-4): On model.dbt_with_snowflake.my_second_dbt_model: COMMIT
+2021-08-18 20:06:05.075752 (Thread-4): Using snowflake connection "model.dbt_with_snowflake.my_second_dbt_model".
+2021-08-18 20:06:05.075928 (Thread-4): On model.dbt_with_snowflake.my_second_dbt_model: COMMIT
+2021-08-18 20:06:05.212642 (Thread-4): SQL status: SUCCESS 1 in 0.14 seconds
+2021-08-18 20:06:05.214584 (Thread-4): finished collecting timing info
+2021-08-18 20:06:05.214991 (Thread-4): On model.dbt_with_snowflake.my_second_dbt_model: Close
+2021-08-18 20:06:05.404335 (Thread-4): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8a36b3e5-0e62-475a-b1f7-7dce5970a8b9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1099d3490>]}
+2021-08-18 20:06:05.404906 (Thread-4): 15:06:05 | 3 of 3 OK created view model PUBLIC.my_second_dbt_model.............. [SUCCESS 1 in 1.36s]
+2021-08-18 20:06:05.405152 (Thread-4): Finished running node model.dbt_with_snowflake.my_second_dbt_model
+2021-08-18 20:06:05.407256 (MainThread): Acquiring new snowflake connection "master".
+2021-08-18 20:06:05.407599 (MainThread): Using snowflake connection "master".
+2021-08-18 20:06:05.407762 (MainThread): On master: BEGIN
+2021-08-18 20:06:05.407918 (MainThread): Opening a new connection, currently in state closed
+2021-08-18 20:06:06.102333 (MainThread): SQL status: SUCCESS 1 in 0.69 seconds
+2021-08-18 20:06:06.102791 (MainThread): On master: COMMIT
+2021-08-18 20:06:06.103208 (MainThread): Using snowflake connection "master".
+2021-08-18 20:06:06.103450 (MainThread): On master: COMMIT
+2021-08-18 20:06:06.443397 (MainThread): SQL status: SUCCESS 1 in 0.34 seconds
+2021-08-18 20:06:06.443861 (MainThread): On master: Close
+2021-08-18 20:06:06.650404 (MainThread): 15:06:06 | 
+2021-08-18 20:06:06.650735 (MainThread): 15:06:06 | Finished running 2 view models, 1 table model in 8.52s.
+2021-08-18 20:06:06.650959 (MainThread): Connection 'master' was properly closed.
+2021-08-18 20:06:06.651121 (MainThread): Connection 'model.dbt_with_snowflake.my_first_dbt_model' was properly closed.
+2021-08-18 20:06:06.651307 (MainThread): Connection 'model.dbt_with_snowflake.snowflake_sample_data__store_sales' was properly closed.
+2021-08-18 20:06:06.651449 (MainThread): Connection 'model.dbt_with_snowflake.my_second_dbt_model' was properly closed.
+2021-08-18 20:06:06.658878 (MainThread): 
+2021-08-18 20:06:06.659109 (MainThread): Completed successfully
+2021-08-18 20:06:06.659304 (MainThread): 
+Done. PASS=3 WARN=0 ERROR=0 SKIP=0 TOTAL=3
+2021-08-18 20:06:06.659575 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1099d8700>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1099d86d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1099d8580>]}
+2021-08-18 20:06:06.659887 (MainThread): Flushing usage events
+2021-08-18 20:07:30.368813 (MainThread): Running with dbt=0.19.1
+2021-08-18 20:07:31.642047 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/scottniblock/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2021-08-18 20:07:31.643415 (MainThread): Tracking: tracking
+2021-08-18 20:07:31.643831 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106a79d90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105b1b1f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106a98280>]}
+2021-08-18 20:07:31.659460 (MainThread): Partial parsing not enabled
+2021-08-18 20:07:31.660795 (MainThread): Parsing macros/catalog.sql
+2021-08-18 20:07:31.663641 (MainThread): Parsing macros/adapters.sql
+2021-08-18 20:07:31.696161 (MainThread): Parsing macros/materializations/merge.sql
+2021-08-18 20:07:31.698843 (MainThread): Parsing macros/materializations/view.sql
+2021-08-18 20:07:31.700768 (MainThread): Parsing macros/materializations/table.sql
+2021-08-18 20:07:31.705163 (MainThread): Parsing macros/materializations/incremental.sql
+2021-08-18 20:07:31.719926 (MainThread): Parsing macros/core.sql
+2021-08-18 20:07:31.730133 (MainThread): Parsing macros/materializations/helpers.sql
+2021-08-18 20:07:31.749741 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-08-18 20:07:31.754457 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-08-18 20:07:31.785068 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-08-18 20:07:31.865313 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-08-18 20:07:31.890582 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-08-18 20:07:31.893132 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-08-18 20:07:31.900954 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-08-18 20:07:31.927736 (MainThread): Parsing macros/materializations/table/table.sql
+2021-08-18 20:07:31.936970 (MainThread): Parsing macros/materializations/view/view.sql
+2021-08-18 20:07:31.945149 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-08-18 20:07:31.951038 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-08-18 20:07:31.952327 (MainThread): Parsing macros/etc/query.sql
+2021-08-18 20:07:31.953778 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-08-18 20:07:31.955889 (MainThread): Parsing macros/etc/datetime.sql
+2021-08-18 20:07:31.966324 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-08-18 20:07:31.970490 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-08-18 20:07:31.973895 (MainThread): Parsing macros/adapters/common.sql
+2021-08-18 20:07:32.027423 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-08-18 20:07:32.031538 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-08-18 20:07:32.034226 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-08-18 20:07:32.037854 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-08-18 20:07:32.048761 (MainThread): Partial parsing not enabled
+2021-08-18 20:07:32.077455 (MainThread): Acquiring new snowflake connection "model.dbt_with_snowflake.my_first_dbt_model".
+2021-08-18 20:07:32.090432 (MainThread): Acquiring new snowflake connection "model.dbt_with_snowflake.my_second_dbt_model".
+2021-08-18 20:07:32.099054 (MainThread): Acquiring new snowflake connection "model.dbt_with_snowflake.snowflake_sample_data__store_sales".
+2021-08-18 20:07:32.213576 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '42d3d29d-68c7-4421-b7ad-fc64b89b2e9c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106e3fee0>]}
+2021-08-18 20:07:32.219336 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '42d3d29d-68c7-4421-b7ad-fc64b89b2e9c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106e25ac0>]}
+2021-08-18 20:07:32.219693 (MainThread): Found 3 models, 4 tests, 0 snapshots, 0 analyses, 143 macros, 0 operations, 0 seed files, 1 source, 0 exposures
+2021-08-18 20:07:32.220739 (MainThread): 
+2021-08-18 20:07:32.221161 (MainThread): Acquiring new snowflake connection "master".
+2021-08-18 20:07:32.222431 (ThreadPoolExecutor-0_0): Acquiring new snowflake connection "list_DEMO_DB".
+2021-08-18 20:07:32.237043 (ThreadPoolExecutor-0_0): Using snowflake connection "list_DEMO_DB".
+2021-08-18 20:07:32.237189 (ThreadPoolExecutor-0_0): On list_DEMO_DB: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "snowflake", "target_name": "dev", "connection_name": "list_DEMO_DB"} */
+
+    show terse schemas in database DEMO_DB
+    limit 10000
+2021-08-18 20:07:32.237287 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-08-18 20:07:33.413365 (ThreadPoolExecutor-0_0): SQL status: SUCCESS 2 in 1.18 seconds
+2021-08-18 20:07:33.421019 (ThreadPoolExecutor-0_0): On list_DEMO_DB: Close
+2021-08-18 20:07:33.622221 (ThreadPoolExecutor-1_0): Acquiring new snowflake connection "list_DEMO_DB_PUBLIC".
+2021-08-18 20:07:33.633679 (ThreadPoolExecutor-1_0): Using snowflake connection "list_DEMO_DB_PUBLIC".
+2021-08-18 20:07:33.633873 (ThreadPoolExecutor-1_0): On list_DEMO_DB_PUBLIC: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "snowflake", "target_name": "dev", "connection_name": "list_DEMO_DB_PUBLIC"} */
+
+    show terse objects in DEMO_DB.PUBLIC
+2021-08-18 20:07:33.634007 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state closed
+2021-08-18 20:07:34.338380 (ThreadPoolExecutor-1_0): SQL status: SUCCESS 3 in 0.70 seconds
+2021-08-18 20:07:34.339245 (ThreadPoolExecutor-1_0): On list_DEMO_DB_PUBLIC: Close
+2021-08-18 20:07:34.550545 (MainThread): Using snowflake connection "master".
+2021-08-18 20:07:34.550821 (MainThread): On master: BEGIN
+2021-08-18 20:07:34.551014 (MainThread): Opening a new connection, currently in state init
+2021-08-18 20:07:35.487291 (MainThread): SQL status: SUCCESS 1 in 0.94 seconds
+2021-08-18 20:07:35.487740 (MainThread): On master: COMMIT
+2021-08-18 20:07:35.488157 (MainThread): Using snowflake connection "master".
+2021-08-18 20:07:35.488398 (MainThread): On master: COMMIT
+2021-08-18 20:07:35.749838 (MainThread): SQL status: SUCCESS 1 in 0.26 seconds
+2021-08-18 20:07:35.750306 (MainThread): On master: Close
+2021-08-18 20:07:35.963938 (MainThread): 15:07:35 | Concurrency: 10 threads (target='dev')
+2021-08-18 20:07:35.964278 (MainThread): 15:07:35 | 
+2021-08-18 20:07:35.968209 (Thread-1): Began running node model.dbt_with_snowflake.my_first_dbt_model
+2021-08-18 20:07:35.968621 (Thread-2): Began running node model.dbt_with_snowflake.snowflake_sample_data__store_sales
+2021-08-18 20:07:35.969194 (Thread-1): 15:07:35 | 1 of 3 START table model PUBLIC.my_first_dbt_model................... [RUN]
+2021-08-18 20:07:35.969579 (Thread-2): 15:07:35 | 2 of 3 START view model PUBLIC.snowflake_sample_data__store_sales.... [RUN]
+2021-08-18 20:07:35.970148 (Thread-1): Acquiring new snowflake connection "model.dbt_with_snowflake.my_first_dbt_model".
+2021-08-18 20:07:35.970617 (Thread-2): Acquiring new snowflake connection "model.dbt_with_snowflake.snowflake_sample_data__store_sales".
+2021-08-18 20:07:35.970842 (Thread-1): Compiling model.dbt_with_snowflake.my_first_dbt_model
+2021-08-18 20:07:35.971020 (Thread-2): Compiling model.dbt_with_snowflake.snowflake_sample_data__store_sales
+2021-08-18 20:07:35.975272 (Thread-1): Writing injected SQL for node "model.dbt_with_snowflake.my_first_dbt_model"
+2021-08-18 20:07:35.978215 (Thread-2): Writing injected SQL for node "model.dbt_with_snowflake.snowflake_sample_data__store_sales"
+2021-08-18 20:07:35.980002 (Thread-2): finished collecting timing info
+2021-08-18 20:07:35.986280 (Thread-1): finished collecting timing info
+2021-08-18 20:07:36.033888 (Thread-2): Writing runtime SQL for node "model.dbt_with_snowflake.snowflake_sample_data__store_sales"
+2021-08-18 20:07:36.038148 (Thread-1): Writing runtime SQL for node "model.dbt_with_snowflake.my_first_dbt_model"
+2021-08-18 20:07:36.040906 (Thread-1): Using snowflake connection "model.dbt_with_snowflake.my_first_dbt_model".
+2021-08-18 20:07:36.041095 (Thread-1): On model.dbt_with_snowflake.my_first_dbt_model: BEGIN
+2021-08-18 20:07:36.041211 (Thread-1): Opening a new connection, currently in state closed
+2021-08-18 20:07:36.042554 (Thread-2): Using snowflake connection "model.dbt_with_snowflake.snowflake_sample_data__store_sales".
+2021-08-18 20:07:36.042667 (Thread-2): On model.dbt_with_snowflake.snowflake_sample_data__store_sales: BEGIN
+2021-08-18 20:07:36.042760 (Thread-2): Opening a new connection, currently in state init
+2021-08-18 20:07:36.952305 (Thread-1): SQL status: SUCCESS 1 in 0.91 seconds
+2021-08-18 20:07:36.952586 (Thread-1): Using snowflake connection "model.dbt_with_snowflake.my_first_dbt_model".
+2021-08-18 20:07:36.952743 (Thread-1): On model.dbt_with_snowflake.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.dbt_with_snowflake.my_first_dbt_model"} */
+
+
+      create or replace transient table DEMO_DB.PUBLIC.my_first_dbt_model  as
+      (/*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+      );
+2021-08-18 20:07:36.992674 (Thread-2): SQL status: SUCCESS 1 in 0.95 seconds
+2021-08-18 20:07:36.992824 (Thread-2): Using snowflake connection "model.dbt_with_snowflake.snowflake_sample_data__store_sales".
+2021-08-18 20:07:36.992906 (Thread-2): On model.dbt_with_snowflake.snowflake_sample_data__store_sales: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.dbt_with_snowflake.snowflake_sample_data__store_sales"} */
+
+  create or replace  view DEMO_DB.PUBLIC.snowflake_sample_data__store_sales  as (
+    with source_store_sales as (
+select * from snowflake_sample_data.TPCDS_SF10TCL.store_sales
+),
+final as(
+  select * from source_store_sales
+)
+select * from final
+  );
+2021-08-18 20:07:37.438302 (Thread-2): SQL status: SUCCESS 1 in 0.45 seconds
+2021-08-18 20:07:37.440966 (Thread-2): On model.dbt_with_snowflake.snowflake_sample_data__store_sales: COMMIT
+2021-08-18 20:07:37.441275 (Thread-2): Using snowflake connection "model.dbt_with_snowflake.snowflake_sample_data__store_sales".
+2021-08-18 20:07:37.441428 (Thread-2): On model.dbt_with_snowflake.snowflake_sample_data__store_sales: COMMIT
+2021-08-18 20:07:37.557758 (Thread-2): SQL status: SUCCESS 1 in 0.12 seconds
+2021-08-18 20:07:37.568206 (Thread-2): finished collecting timing info
+2021-08-18 20:07:37.568460 (Thread-2): On model.dbt_with_snowflake.snowflake_sample_data__store_sales: Close
+2021-08-18 20:07:37.767531 (Thread-2): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '42d3d29d-68c7-4421-b7ad-fc64b89b2e9c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b0ecb80>]}
+2021-08-18 20:07:37.768245 (Thread-2): 15:07:37 | 2 of 3 OK created view model PUBLIC.snowflake_sample_data__store_sales [SUCCESS 1 in 1.80s]
+2021-08-18 20:07:37.768525 (Thread-2): Finished running node model.dbt_with_snowflake.snowflake_sample_data__store_sales
+2021-08-18 20:07:37.875476 (Thread-1): SQL status: SUCCESS 1 in 0.92 seconds
+2021-08-18 20:07:37.877610 (Thread-1): On model.dbt_with_snowflake.my_first_dbt_model: COMMIT
+2021-08-18 20:07:37.877930 (Thread-1): Using snowflake connection "model.dbt_with_snowflake.my_first_dbt_model".
+2021-08-18 20:07:37.878106 (Thread-1): On model.dbt_with_snowflake.my_first_dbt_model: COMMIT
+2021-08-18 20:07:38.012137 (Thread-1): SQL status: SUCCESS 1 in 0.13 seconds
+2021-08-18 20:07:38.018118 (Thread-1): finished collecting timing info
+2021-08-18 20:07:38.018311 (Thread-1): On model.dbt_with_snowflake.my_first_dbt_model: Close
+2021-08-18 20:07:38.222108 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '42d3d29d-68c7-4421-b7ad-fc64b89b2e9c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b1bcf10>]}
+2021-08-18 20:07:38.222788 (Thread-1): 15:07:38 | 1 of 3 OK created table model PUBLIC.my_first_dbt_model.............. [SUCCESS 1 in 2.25s]
+2021-08-18 20:07:38.223062 (Thread-1): Finished running node model.dbt_with_snowflake.my_first_dbt_model
+2021-08-18 20:07:38.224045 (Thread-4): Began running node model.dbt_with_snowflake.my_second_dbt_model
+2021-08-18 20:07:38.224513 (Thread-4): 15:07:38 | 3 of 3 START view model PUBLIC.my_second_dbt_model................... [RUN]
+2021-08-18 20:07:38.225270 (Thread-4): Acquiring new snowflake connection "model.dbt_with_snowflake.my_second_dbt_model".
+2021-08-18 20:07:38.225523 (Thread-4): Compiling model.dbt_with_snowflake.my_second_dbt_model
+2021-08-18 20:07:38.229245 (Thread-4): Writing injected SQL for node "model.dbt_with_snowflake.my_second_dbt_model"
+2021-08-18 20:07:38.229934 (Thread-4): finished collecting timing info
+2021-08-18 20:07:38.233517 (Thread-4): Writing runtime SQL for node "model.dbt_with_snowflake.my_second_dbt_model"
+2021-08-18 20:07:38.236321 (Thread-4): Using snowflake connection "model.dbt_with_snowflake.my_second_dbt_model".
+2021-08-18 20:07:38.236587 (Thread-4): On model.dbt_with_snowflake.my_second_dbt_model: BEGIN
+2021-08-18 20:07:38.236799 (Thread-4): Opening a new connection, currently in state init
+2021-08-18 20:07:38.985888 (Thread-4): SQL status: SUCCESS 1 in 0.75 seconds
+2021-08-18 20:07:38.986316 (Thread-4): Using snowflake connection "model.dbt_with_snowflake.my_second_dbt_model".
+2021-08-18 20:07:38.986575 (Thread-4): On model.dbt_with_snowflake.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.dbt_with_snowflake.my_second_dbt_model"} */
+
+  create or replace  view DEMO_DB.PUBLIC.my_second_dbt_model  as (
+    -- Use the `ref` function to select from other models
+
+select *
+from DEMO_DB.PUBLIC.my_first_dbt_model
+where id = 1
+  );
+2021-08-18 20:07:39.294133 (Thread-4): SQL status: SUCCESS 1 in 0.31 seconds
+2021-08-18 20:07:39.296732 (Thread-4): On model.dbt_with_snowflake.my_second_dbt_model: COMMIT
+2021-08-18 20:07:39.297044 (Thread-4): Using snowflake connection "model.dbt_with_snowflake.my_second_dbt_model".
+2021-08-18 20:07:39.297219 (Thread-4): On model.dbt_with_snowflake.my_second_dbt_model: COMMIT
+2021-08-18 20:07:39.426708 (Thread-4): SQL status: SUCCESS 1 in 0.13 seconds
+2021-08-18 20:07:39.428782 (Thread-4): finished collecting timing info
+2021-08-18 20:07:39.429203 (Thread-4): On model.dbt_with_snowflake.my_second_dbt_model: Close
+2021-08-18 20:07:39.626533 (Thread-4): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '42d3d29d-68c7-4421-b7ad-fc64b89b2e9c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b0fc160>]}
+2021-08-18 20:07:39.627234 (Thread-4): 15:07:39 | 3 of 3 OK created view model PUBLIC.my_second_dbt_model.............. [SUCCESS 1 in 1.40s]
+2021-08-18 20:07:39.627509 (Thread-4): Finished running node model.dbt_with_snowflake.my_second_dbt_model
+2021-08-18 20:07:39.630022 (MainThread): Acquiring new snowflake connection "master".
+2021-08-18 20:07:39.630417 (MainThread): Using snowflake connection "master".
+2021-08-18 20:07:39.630601 (MainThread): On master: BEGIN
+2021-08-18 20:07:39.630784 (MainThread): Opening a new connection, currently in state closed
+2021-08-18 20:07:40.209197 (MainThread): unclosed <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('192.168.1.100', 51771), raddr=('52.183.89.201', 443)>
+2021-08-18 20:07:40.776618 (MainThread): SQL status: SUCCESS 1 in 1.15 seconds
+2021-08-18 20:07:40.777082 (MainThread): On master: COMMIT
+2021-08-18 20:07:40.777502 (MainThread): Using snowflake connection "master".
+2021-08-18 20:07:40.777749 (MainThread): On master: COMMIT
+2021-08-18 20:07:41.040987 (MainThread): SQL status: SUCCESS 1 in 0.26 seconds
+2021-08-18 20:07:41.041464 (MainThread): On master: Close
+2021-08-18 20:07:41.241020 (MainThread): 15:07:41 | 
+2021-08-18 20:07:41.241347 (MainThread): 15:07:41 | Finished running 2 view models, 1 table model in 9.02s.
+2021-08-18 20:07:41.241567 (MainThread): Connection 'master' was properly closed.
+2021-08-18 20:07:41.241729 (MainThread): Connection 'model.dbt_with_snowflake.my_first_dbt_model' was properly closed.
+2021-08-18 20:07:41.241880 (MainThread): Connection 'model.dbt_with_snowflake.snowflake_sample_data__store_sales' was properly closed.
+2021-08-18 20:07:41.242022 (MainThread): Connection 'model.dbt_with_snowflake.my_second_dbt_model' was properly closed.
+2021-08-18 20:07:41.249361 (MainThread): 
+2021-08-18 20:07:41.249614 (MainThread): Completed successfully
+2021-08-18 20:07:41.249820 (MainThread): 
+Done. PASS=3 WARN=0 ERROR=0 SKIP=0 TOTAL=3
+2021-08-18 20:07:41.250095 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106e85640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106e85ca0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106e85be0>]}
+2021-08-18 20:07:41.250427 (MainThread): Flushing usage events
+2021-08-18 20:09:41.826241 (MainThread): Running with dbt=0.19.1
+2021-08-18 20:09:43.306715 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/scottniblock/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2021-08-18 20:09:43.308529 (MainThread): Tracking: tracking
+2021-08-18 20:09:43.309087 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1069861f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10789cee0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10789cf70>]}
+2021-08-18 20:09:43.324903 (MainThread): Partial parsing not enabled
+2021-08-18 20:09:43.326758 (MainThread): Parsing macros/catalog.sql
+2021-08-18 20:09:43.330150 (MainThread): Parsing macros/adapters.sql
+2021-08-18 20:09:43.363730 (MainThread): Parsing macros/materializations/merge.sql
+2021-08-18 20:09:43.366128 (MainThread): Parsing macros/materializations/view.sql
+2021-08-18 20:09:43.368044 (MainThread): Parsing macros/materializations/table.sql
+2021-08-18 20:09:43.373101 (MainThread): Parsing macros/materializations/incremental.sql
+2021-08-18 20:09:43.386123 (MainThread): Parsing macros/core.sql
+2021-08-18 20:09:43.391201 (MainThread): Parsing macros/materializations/helpers.sql
+2021-08-18 20:09:43.401404 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-08-18 20:09:43.404401 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-08-18 20:09:43.425831 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-08-18 20:09:43.500235 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-08-18 20:09:43.524901 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-08-18 20:09:43.527082 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-08-18 20:09:43.535300 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-08-18 20:09:43.556466 (MainThread): Parsing macros/materializations/table/table.sql
+2021-08-18 20:09:43.564967 (MainThread): Parsing macros/materializations/view/view.sql
+2021-08-18 20:09:43.572346 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-08-18 20:09:43.578322 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-08-18 20:09:43.579619 (MainThread): Parsing macros/etc/query.sql
+2021-08-18 20:09:43.581024 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-08-18 20:09:43.583048 (MainThread): Parsing macros/etc/datetime.sql
+2021-08-18 20:09:43.593222 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-08-18 20:09:43.595870 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-08-18 20:09:43.598456 (MainThread): Parsing macros/adapters/common.sql
+2021-08-18 20:09:43.645597 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-08-18 20:09:43.648549 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-08-18 20:09:43.650693 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-08-18 20:09:43.653154 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-08-18 20:09:43.662572 (MainThread): Partial parsing not enabled
+2021-08-18 20:09:43.694930 (MainThread): Acquiring new snowflake connection "model.dbt_with_snowflake.my_first_dbt_model".
+2021-08-18 20:09:43.710200 (MainThread): Acquiring new snowflake connection "model.dbt_with_snowflake.my_second_dbt_model".
+2021-08-18 20:09:43.714912 (MainThread): Acquiring new snowflake connection "model.dbt_with_snowflake.snowflake_sample_data__store_sales".
+2021-08-18 20:09:43.804233 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'd6672162-12c8-4be7-89fa-417ccc80be6a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107ba5640>]}
+2021-08-18 20:09:43.810043 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'd6672162-12c8-4be7-89fa-417ccc80be6a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1079d4d30>]}
+2021-08-18 20:09:43.810305 (MainThread): Found 3 models, 4 tests, 0 snapshots, 0 analyses, 143 macros, 0 operations, 0 seed files, 1 source, 0 exposures
+2021-08-18 20:09:43.811051 (MainThread): 
+2021-08-18 20:09:43.811337 (MainThread): Acquiring new snowflake connection "master".
+2021-08-18 20:09:43.812116 (ThreadPoolExecutor-0_0): Acquiring new snowflake connection "list_DEMO_DB".
+2021-08-18 20:09:43.826125 (ThreadPoolExecutor-0_0): Using snowflake connection "list_DEMO_DB".
+2021-08-18 20:09:43.826258 (ThreadPoolExecutor-0_0): On list_DEMO_DB: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "snowflake", "target_name": "dev", "connection_name": "list_DEMO_DB"} */
+
+    show terse schemas in database DEMO_DB
+    limit 10000
+2021-08-18 20:09:43.826352 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-08-18 20:09:44.930300 (ThreadPoolExecutor-0_0): SQL status: SUCCESS 2 in 1.10 seconds
+2021-08-18 20:09:44.934392 (ThreadPoolExecutor-0_0): On list_DEMO_DB: Close
+2021-08-18 20:09:45.133304 (ThreadPoolExecutor-1_0): Acquiring new snowflake connection "list_DEMO_DB_PUBLIC".
+2021-08-18 20:09:45.144138 (ThreadPoolExecutor-1_0): Using snowflake connection "list_DEMO_DB_PUBLIC".
+2021-08-18 20:09:45.144332 (ThreadPoolExecutor-1_0): On list_DEMO_DB_PUBLIC: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "snowflake", "target_name": "dev", "connection_name": "list_DEMO_DB_PUBLIC"} */
+
+    show terse objects in DEMO_DB.PUBLIC
+2021-08-18 20:09:45.144463 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state closed
+2021-08-18 20:09:45.811763 (ThreadPoolExecutor-1_0): SQL status: SUCCESS 3 in 0.67 seconds
+2021-08-18 20:09:45.813975 (ThreadPoolExecutor-1_0): On list_DEMO_DB_PUBLIC: Close
+2021-08-18 20:09:46.008321 (MainThread): Using snowflake connection "master".
+2021-08-18 20:09:46.008595 (MainThread): On master: BEGIN
+2021-08-18 20:09:46.008793 (MainThread): Opening a new connection, currently in state init
+2021-08-18 20:09:46.784233 (MainThread): SQL status: SUCCESS 1 in 0.78 seconds
+2021-08-18 20:09:46.784563 (MainThread): On master: COMMIT
+2021-08-18 20:09:46.784868 (MainThread): Using snowflake connection "master".
+2021-08-18 20:09:46.785047 (MainThread): On master: COMMIT
+2021-08-18 20:09:47.212727 (MainThread): SQL status: SUCCESS 1 in 0.43 seconds
+2021-08-18 20:09:47.213191 (MainThread): On master: Close
+2021-08-18 20:09:47.433318 (MainThread): 15:09:47 | Concurrency: 10 threads (target='dev')
+2021-08-18 20:09:47.433521 (MainThread): 15:09:47 | 
+2021-08-18 20:09:47.435289 (Thread-1): Began running node model.dbt_with_snowflake.my_first_dbt_model
+2021-08-18 20:09:47.435436 (Thread-2): Began running node model.dbt_with_snowflake.snowflake_sample_data__store_sales
+2021-08-18 20:09:47.435713 (Thread-1): 15:09:47 | 1 of 3 START table model PUBLIC.my_first_dbt_model................... [RUN]
+2021-08-18 20:09:47.435921 (Thread-2): 15:09:47 | 2 of 3 START view model PUBLIC.snowflake_sample_data__store_sales.... [RUN]
+2021-08-18 20:09:47.436271 (Thread-1): Acquiring new snowflake connection "model.dbt_with_snowflake.my_first_dbt_model".
+2021-08-18 20:09:47.436534 (Thread-2): Acquiring new snowflake connection "model.dbt_with_snowflake.snowflake_sample_data__store_sales".
+2021-08-18 20:09:47.436679 (Thread-1): Compiling model.dbt_with_snowflake.my_first_dbt_model
+2021-08-18 20:09:47.436793 (Thread-2): Compiling model.dbt_with_snowflake.snowflake_sample_data__store_sales
+2021-08-18 20:09:47.439595 (Thread-2): Writing injected SQL for node "model.dbt_with_snowflake.snowflake_sample_data__store_sales"
+2021-08-18 20:09:47.441774 (Thread-1): Writing injected SQL for node "model.dbt_with_snowflake.my_first_dbt_model"
+2021-08-18 20:09:47.442130 (Thread-2): finished collecting timing info
+2021-08-18 20:09:47.459313 (Thread-1): finished collecting timing info
+2021-08-18 20:09:47.487908 (Thread-2): Writing runtime SQL for node "model.dbt_with_snowflake.snowflake_sample_data__store_sales"
+2021-08-18 20:09:47.499947 (Thread-1): Writing runtime SQL for node "model.dbt_with_snowflake.my_first_dbt_model"
+2021-08-18 20:09:47.501354 (Thread-2): Using snowflake connection "model.dbt_with_snowflake.snowflake_sample_data__store_sales".
+2021-08-18 20:09:47.501476 (Thread-2): On model.dbt_with_snowflake.snowflake_sample_data__store_sales: BEGIN
+2021-08-18 20:09:47.501573 (Thread-2): Opening a new connection, currently in state init
+2021-08-18 20:09:47.502872 (Thread-1): Using snowflake connection "model.dbt_with_snowflake.my_first_dbt_model".
+2021-08-18 20:09:47.502987 (Thread-1): On model.dbt_with_snowflake.my_first_dbt_model: BEGIN
+2021-08-18 20:09:47.503078 (Thread-1): Opening a new connection, currently in state closed
+2021-08-18 20:09:48.416846 (Thread-2): SQL status: SUCCESS 1 in 0.92 seconds
+2021-08-18 20:09:48.417424 (Thread-2): Using snowflake connection "model.dbt_with_snowflake.snowflake_sample_data__store_sales".
+2021-08-18 20:09:48.417909 (Thread-2): On model.dbt_with_snowflake.snowflake_sample_data__store_sales: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.dbt_with_snowflake.snowflake_sample_data__store_sales"} */
+
+  create or replace  view DEMO_DB.PUBLIC.snowflake_sample_data__store_sales  as (
+    with source_store_sales as (
+select * from snowflake_sample_data.TPCDS_SF10TCL.store_sales
+),
+final as(
+  select * from source_store_sales
+)
+select * from final
+  );
+2021-08-18 20:09:48.596935 (Thread-1): SQL status: SUCCESS 1 in 1.09 seconds
+2021-08-18 20:09:48.598210 (Thread-1): Using snowflake connection "model.dbt_with_snowflake.my_first_dbt_model".
+2021-08-18 20:09:48.598617 (Thread-1): On model.dbt_with_snowflake.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.dbt_with_snowflake.my_first_dbt_model"} */
+
+
+      create or replace transient table DEMO_DB.PUBLIC.my_first_dbt_model  as
+      (/*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+      );
+2021-08-18 20:09:48.769588 (Thread-2): SQL status: SUCCESS 1 in 0.35 seconds
+2021-08-18 20:09:48.772360 (Thread-2): On model.dbt_with_snowflake.snowflake_sample_data__store_sales: COMMIT
+2021-08-18 20:09:48.772688 (Thread-2): Using snowflake connection "model.dbt_with_snowflake.snowflake_sample_data__store_sales".
+2021-08-18 20:09:48.772869 (Thread-2): On model.dbt_with_snowflake.snowflake_sample_data__store_sales: COMMIT
+2021-08-18 20:09:48.901964 (Thread-2): SQL status: SUCCESS 1 in 0.13 seconds
+2021-08-18 20:09:48.908635 (Thread-2): finished collecting timing info
+2021-08-18 20:09:48.908821 (Thread-2): On model.dbt_with_snowflake.snowflake_sample_data__store_sales: Close
+2021-08-18 20:09:49.094353 (Thread-2): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd6672162-12c8-4be7-89fa-417ccc80be6a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107eaf970>]}
+2021-08-18 20:09:49.095078 (Thread-2): 15:09:49 | 2 of 3 OK created view model PUBLIC.snowflake_sample_data__store_sales [SUCCESS 1 in 1.66s]
+2021-08-18 20:09:49.095372 (Thread-2): Finished running node model.dbt_with_snowflake.snowflake_sample_data__store_sales
+2021-08-18 20:09:49.435799 (Thread-1): SQL status: SUCCESS 1 in 0.84 seconds
+2021-08-18 20:09:49.437668 (Thread-1): On model.dbt_with_snowflake.my_first_dbt_model: COMMIT
+2021-08-18 20:09:49.437974 (Thread-1): Using snowflake connection "model.dbt_with_snowflake.my_first_dbt_model".
+2021-08-18 20:09:49.438166 (Thread-1): On model.dbt_with_snowflake.my_first_dbt_model: COMMIT
+2021-08-18 20:09:49.586785 (Thread-1): SQL status: SUCCESS 1 in 0.15 seconds
+2021-08-18 20:09:49.596382 (Thread-1): finished collecting timing info
+2021-08-18 20:09:49.596659 (Thread-1): On model.dbt_with_snowflake.my_first_dbt_model: Close
+2021-08-18 20:09:49.796204 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd6672162-12c8-4be7-89fa-417ccc80be6a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107f34fa0>]}
+2021-08-18 20:09:49.797008 (Thread-1): 15:09:49 | 1 of 3 OK created table model PUBLIC.my_first_dbt_model.............. [SUCCESS 1 in 2.36s]
+2021-08-18 20:09:49.797262 (Thread-1): Finished running node model.dbt_with_snowflake.my_first_dbt_model
+2021-08-18 20:09:49.798157 (Thread-4): Began running node model.dbt_with_snowflake.my_second_dbt_model
+2021-08-18 20:09:49.798553 (Thread-4): 15:09:49 | 3 of 3 START view model PUBLIC.my_second_dbt_model................... [RUN]
+2021-08-18 20:09:49.799047 (Thread-4): Acquiring new snowflake connection "model.dbt_with_snowflake.my_second_dbt_model".
+2021-08-18 20:09:49.799253 (Thread-4): Compiling model.dbt_with_snowflake.my_second_dbt_model
+2021-08-18 20:09:49.802786 (Thread-4): Writing injected SQL for node "model.dbt_with_snowflake.my_second_dbt_model"
+2021-08-18 20:09:49.803472 (Thread-4): finished collecting timing info
+2021-08-18 20:09:49.806550 (Thread-4): Writing runtime SQL for node "model.dbt_with_snowflake.my_second_dbt_model"
+2021-08-18 20:09:49.807561 (Thread-4): Using snowflake connection "model.dbt_with_snowflake.my_second_dbt_model".
+2021-08-18 20:09:49.807696 (Thread-4): On model.dbt_with_snowflake.my_second_dbt_model: BEGIN
+2021-08-18 20:09:49.807820 (Thread-4): Opening a new connection, currently in state init
+2021-08-18 20:09:50.931223 (Thread-4): SQL status: SUCCESS 1 in 1.12 seconds
+2021-08-18 20:09:50.931647 (Thread-4): Using snowflake connection "model.dbt_with_snowflake.my_second_dbt_model".
+2021-08-18 20:09:50.931902 (Thread-4): On model.dbt_with_snowflake.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.dbt_with_snowflake.my_second_dbt_model"} */
+
+  create or replace  view DEMO_DB.PUBLIC.my_second_dbt_model  as (
+    -- Use the `ref` function to select from other models
+
+select *
+from DEMO_DB.PUBLIC.my_first_dbt_model
+where id = 1
+  );
+2021-08-18 20:09:51.319156 (Thread-4): SQL status: SUCCESS 1 in 0.39 seconds
+2021-08-18 20:09:51.320120 (Thread-4): On model.dbt_with_snowflake.my_second_dbt_model: COMMIT
+2021-08-18 20:09:51.320292 (Thread-4): Using snowflake connection "model.dbt_with_snowflake.my_second_dbt_model".
+2021-08-18 20:09:51.320379 (Thread-4): On model.dbt_with_snowflake.my_second_dbt_model: COMMIT
+2021-08-18 20:09:51.575794 (Thread-4): SQL status: SUCCESS 1 in 0.26 seconds
+2021-08-18 20:09:51.577648 (Thread-4): finished collecting timing info
+2021-08-18 20:09:51.577935 (Thread-4): On model.dbt_with_snowflake.my_second_dbt_model: Close
+2021-08-18 20:09:51.767519 (Thread-4): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd6672162-12c8-4be7-89fa-417ccc80be6a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107fb9400>]}
+2021-08-18 20:09:51.768210 (Thread-4): 15:09:51 | 3 of 3 OK created view model PUBLIC.my_second_dbt_model.............. [SUCCESS 1 in 1.97s]
+2021-08-18 20:09:51.768492 (Thread-4): Finished running node model.dbt_with_snowflake.my_second_dbt_model
+2021-08-18 20:09:51.770938 (MainThread): Acquiring new snowflake connection "master".
+2021-08-18 20:09:51.771333 (MainThread): Using snowflake connection "master".
+2021-08-18 20:09:51.771518 (MainThread): On master: BEGIN
+2021-08-18 20:09:51.771702 (MainThread): Opening a new connection, currently in state closed
+2021-08-18 20:09:52.550209 (MainThread): SQL status: SUCCESS 1 in 0.78 seconds
+2021-08-18 20:09:52.550664 (MainThread): On master: COMMIT
+2021-08-18 20:09:52.551080 (MainThread): Using snowflake connection "master".
+2021-08-18 20:09:52.551326 (MainThread): On master: COMMIT
+2021-08-18 20:09:52.858315 (MainThread): SQL status: SUCCESS 1 in 0.31 seconds
+2021-08-18 20:09:52.858779 (MainThread): On master: Close
+2021-08-18 20:09:53.049218 (MainThread): 15:09:53 | 
+2021-08-18 20:09:53.049557 (MainThread): 15:09:53 | Finished running 2 view models, 1 table model in 9.24s.
+2021-08-18 20:09:53.049783 (MainThread): Connection 'master' was properly closed.
+2021-08-18 20:09:53.049948 (MainThread): Connection 'model.dbt_with_snowflake.my_first_dbt_model' was properly closed.
+2021-08-18 20:09:53.050100 (MainThread): Connection 'model.dbt_with_snowflake.snowflake_sample_data__store_sales' was properly closed.
+2021-08-18 20:09:53.050247 (MainThread): Connection 'model.dbt_with_snowflake.my_second_dbt_model' was properly closed.
+2021-08-18 20:09:53.059835 (MainThread): 
+2021-08-18 20:09:53.060134 (MainThread): Completed successfully
+2021-08-18 20:09:53.060382 (MainThread): 
+Done. PASS=3 WARN=0 ERROR=0 SKIP=0 TOTAL=3
+2021-08-18 20:09:53.060712 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1079f29d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107eafac0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107eaf880>]}
+2021-08-18 20:09:53.061061 (MainThread): Flushing usage events

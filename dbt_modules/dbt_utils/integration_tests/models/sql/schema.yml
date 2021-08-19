@@ -4,7 +4,7 @@ models:
   - name: test_generate_series
     tests:
       - dbt_utils.equality:
-          compare_model: ref('data_generate_series')
+          arg: ref('data_generate_series')
 
   - name: test_get_column_values
     columns:
@@ -50,7 +50,7 @@ models:
               values:
                 - '5'
 
-  - name: test_get_relations_by_prefix_and_union
+  - name: test_get_tables_by_prefix_and_union
     columns:
       - name: event
         tests:
@@ -96,11 +96,6 @@ models:
       - dbt_utils.equality:
           compare_model: ref('data_unpivot_expected')
 
-  - name: test_unpivot_bool
-    tests:
-      - dbt_utils.equality:
-          compare_model: ref('data_unpivot_bool_expected')
-
   - name: test_star
     tests:
       - dbt_utils.equality:
@@ -122,8 +117,3 @@ models:
     tests:
       - dbt_utils.equality:
           compare_model: ref('data_union_expected')
-          
-  - name: test_get_relations_by_pattern
-    tests:
-      - dbt_utils.equality:
-          compare_model: ref('data_union_events_expected')

@@ -1,8 +1,5 @@
 {% macro star(from, relation_alias=False, except=[]) -%}
-    {{ return(adapter.dispatch('star', 'dbt_utils')(from, relation_alias, except)) }}
-{% endmacro %}
 
-{% macro default__star(from, relation_alias=False, except=[]) -%}
     {%- do dbt_utils._is_relation(from, 'star') -%}
     {%- do dbt_utils._is_ephemeral(from, 'star') -%}
 

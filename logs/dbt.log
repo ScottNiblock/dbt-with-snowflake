@@ -5164,3 +5164,109 @@ Error encountered in /Users/scottniblock/Documents/dbt-with-snowflake/dbt_module
 2021-08-19 19:24:55.597181 (MainThread): Sending event: {'category': 'dbt', 'action': 'package', 'label': '07224bda-0bb0-44a6-8021-15b361a9986c', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112d4ac40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112b7f160>]}
 2021-08-19 19:24:55.598188 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1120e9c40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112d30e50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112d4ac40>]}
 2021-08-19 19:24:55.598516 (MainThread): Flushing usage events
+2021-08-19 19:25:40.134394 (MainThread): Running with dbt=0.19.1
+2021-08-19 19:25:40.795575 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.generate.GenerateTask'>, compile=True, debug=False, defer=None, exclude=None, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/scottniblock/.dbt', project_dir=None, record_timing_info=None, rpc_method='docs.generate', selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, vars='{}', version_check=True, warn_error=False, which='generate', write_json=True)
+2021-08-19 19:25:40.796550 (MainThread): Tracking: tracking
+2021-08-19 19:25:40.796866 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110c180d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110c181c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110c3f370>]}
+2021-08-19 19:25:40.814879 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110bd4b50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110bd4310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110bd4c70>]}
+2021-08-19 19:25:40.815117 (MainThread): Flushing usage events
+2021-08-19 19:25:41.277048 (MainThread): Encountered an error:
+2021-08-19 19:25:41.277597 (MainThread): Runtime Error
+  Failed to read package: Runtime Error
+    This version of dbt is not supported with the 'dbt_utils' package.
+      Installed version of dbt: =0.19.1
+      Required version of dbt for 'dbt_utils': ['>=0.18.0', '<0.19.0']
+    Check the requirements for the 'dbt_utils' package, or run dbt again with --no-version-check
+    
+  
+  Error encountered in /Users/scottniblock/Documents/dbt-with-snowflake/dbt_modules/dbt_utils/dbt_project.yml
+
+Error encountered in /Users/scottniblock/Documents/dbt-with-snowflake/dbt_modules/dbt_utils
+2021-08-19 19:25:41.281531 (MainThread): Traceback (most recent call last):
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/config/runtime.py", line 353, in load_projects
+    project = self.new_project(str(path))
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/config/runtime.py", line 142, in new_project
+    project = Project.from_project_root(
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/config/project.py", line 633, in from_project_root
+    return partial.render(renderer)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/config/project.py", line 289, in render
+    return self.create_project(rendered)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/config/project.py", line 301, in create_project
+    dbt_version = _get_required_version(
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/config/project.py", line 226, in _get_required_version
+    validate_version(dbt_version, project_dict['name'])
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/config/project.py", line 203, in validate_version
+    raise DbtProjectError(msg)
+dbt.exceptions.DbtProjectError: Runtime Error
+  This version of dbt is not supported with the 'dbt_utils' package.
+    Installed version of dbt: =0.19.1
+    Required version of dbt for 'dbt_utils': ['>=0.18.0', '<0.19.0']
+  Check the requirements for the 'dbt_utils' package, or run dbt again with --no-version-check
+  
+
+Error encountered in /Users/scottniblock/Documents/dbt-with-snowflake/dbt_modules/dbt_utils/dbt_project.yml
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/main.py", line 125, in main
+    results, succeeded = handle_and_check(args)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/main.py", line 203, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/main.py", line 256, in run_from_args
+    results = task.run()
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/task/generate.py", line 213, in run
+    compile_results = CompileTask.run(self)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 406, in run
+    self._runtime_initialize()
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 122, in _runtime_initialize
+    super()._runtime_initialize()
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 79, in _runtime_initialize
+    self.load_manifest()
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 66, in load_manifest
+    self.manifest = get_full_manifest(self.config)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/perf_utils.py", line 26, in get_full_manifest
+    macro_manifest: MacroManifest = adapter.load_macro_manifest()
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/adapters/base/impl.py", line 277, in load_macro_manifest
+    manifest = load_macro_manifest(
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 854, in load_macro_manifest
+    return ManifestLoader.load_macros(config, macro_hook)
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 463, in load_macros
+    projects = root_config.load_dependencies()
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/config/runtime.py", line 333, in load_dependencies
+    for project_name, project in self.load_projects(project_paths):
+  File "/usr/local/Cellar/dbt/0.19.1_1/libexec/lib/python3.8/site-packages/dbt/config/runtime.py", line 355, in load_projects
+    raise DbtProjectError(
+dbt.exceptions.DbtProjectError: Runtime Error
+  Failed to read package: Runtime Error
+    This version of dbt is not supported with the 'dbt_utils' package.
+      Installed version of dbt: =0.19.1
+      Required version of dbt for 'dbt_utils': ['>=0.18.0', '<0.19.0']
+    Check the requirements for the 'dbt_utils' package, or run dbt again with --no-version-check
+    
+  
+  Error encountered in /Users/scottniblock/Documents/dbt-with-snowflake/dbt_modules/dbt_utils/dbt_project.yml
+
+Error encountered in /Users/scottniblock/Documents/dbt-with-snowflake/dbt_modules/dbt_utils
+
+2021-08-19 19:26:19.404119 (MainThread): Running with dbt=0.19.1
+2021-08-19 19:26:20.667627 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.deps.DepsTask'>, debug=False, defer=None, log_cache_events=False, log_format='default', partial_parse=None, profile=None, profiles_dir='/Users/scottniblock/.dbt', project_dir=None, record_timing_info=None, rpc_method='deps', single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, use_cache=True, use_colors=None, vars='{}', warn_error=False, which='deps', write_json=True)
+2021-08-19 19:26:20.668414 (MainThread): Tracking: tracking
+2021-08-19 19:26:20.668605 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10cc3e130>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10dbb57c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10dbb5910>]}
+2021-08-19 19:26:20.669557 (MainThread): Set downloads directory='/var/folders/jl/v4vp_km509q96d2k69rrrckr0000gn/T/dbt-downloads-crkz3uoo'
+2021-08-19 19:26:20.669830 (MainThread): Making package registry request: GET https://hub.getdbt.com/api/v1/index.json
+2021-08-19 19:26:21.342525 (MainThread): Response from registry: GET https://hub.getdbt.com/api/v1/index.json 200
+2021-08-19 19:26:21.343097 (MainThread): Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+2021-08-19 19:26:21.743838 (MainThread): Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+2021-08-19 19:26:21.748156 (MainThread): Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils/0.6.5.json
+2021-08-19 19:26:22.140258 (MainThread): Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils/0.6.5.json 200
+2021-08-19 19:26:22.140743 (MainThread): Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+2021-08-19 19:26:22.528874 (MainThread): Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+2021-08-19 19:26:22.533075 (MainThread): Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils/0.6.5.json
+2021-08-19 19:26:22.872781 (MainThread): Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils/0.6.5.json 200
+2021-08-19 19:26:22.873354 (MainThread): Installing dbt-labs/dbt_utils@0.6.5
+2021-08-19 19:26:23.479789 (MainThread):   Installed from version 0.6.5
+
+2021-08-19 19:26:23.480123 (MainThread): Sending event: {'category': 'dbt', 'action': 'package', 'label': '17e8deeb-49ac-423c-9986-c85b43e5644c', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10dc53160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10db8d1f0>]}
+2021-08-19 19:26:23.481080 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10cc3e130>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10db8d1f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10dc53160>]}
+2021-08-19 19:26:23.481348 (MainThread): Flushing usage events

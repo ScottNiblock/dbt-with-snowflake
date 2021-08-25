@@ -1,0 +1,8 @@
+
+    truncate table "DEMO_DB"."PUBLIC"."TEAM_LOCATIONS";
+    -- dbt seed --
+    
+            insert into DEMO_DB.PUBLIC.team_locations (name, city, state) values
+            (%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s)
+        
+  

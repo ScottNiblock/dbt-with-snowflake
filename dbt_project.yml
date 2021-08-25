@@ -6,6 +6,9 @@ name: 'dbt_with_snowflake'
 version: '1.0.0'
 config-version: 2
 
+vars:
+    current_champion: Redskins
+
 # This setting configures which "profile" dbt uses for this project.
 profile: 'snowflake'
 
@@ -24,6 +27,9 @@ clean-targets:         # directories to be removed by `dbt clean`
     - "target"
     - "dbt_modules"
 
+on-run-start: "{{insert_audits('run_start')}}"
+on-run-end: "{{insert_audits('run_end')}}"
+
 
 # Configuring models
 # Full documentation: https://docs.getdbt.com/docs/configuring-models
@@ -32,6 +38,8 @@ clean-targets:         # directories to be removed by `dbt clean`
 # as tables. These settings can be overridden in the individual model files
 # using the `{{ config(...) }}` macro.
 models:
+  pre-hook: "{{insert_audits('model_start')}}"
+  post-hook: "{{insert_audits('model_end')}}"
   dbt_with_snowflake:
       # Applies to all files under models/example/
       staging:
